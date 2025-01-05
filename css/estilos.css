@@ -1,0 +1,81 @@
+
+/* Logo de la pagina: bandera de Italia*/
+.logo{
+    width: 30%;
+}
+
+/* Estilos para los links */
+
+a:visited{ color: rgba(80, 66, 21, 0.988) !important; }
+a:hover { color: #529355 !important;}
+a:active{color: rgb(218, 28, 28) !important;}
+
+
+/* Imagen header del homepage*/
+.imagen-header{
+    width: 90%; 
+    height: auto;  
+    max-height: 75vh;   
+    object-fit: cover;  
+    display: block;      
+
+}
+
+/* Barra de navegacion*/
+.container-fluid{
+    width: 90%;
+}
+
+
+/* Barra de navegacion*/
+.contenedor-home{
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    text-align: justify;
+    width: 90%;
+    margin-bottom: 5em;
+    
+}
+
+footer{
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    width: 90%;
+    background-color: #ce2b37;
+    border-radius: 0.3em;
+}
+
+.logo-instagram{
+    width: 2em;
+}
+
+
+.imagen-home{
+   
+    border-radius: 0.5em;
+    width: 100%;
+     height: auto;
+      margin-top: 3em;
+    }
+
+
+
+
+
+
+    @media screen and (min-width: 768px) {
+    }
+
+
+
+
+@media screen and (min-width: 992px) {
+    .imagen-home{
+        float: right;
+        border-radius: 0.5em;
+        width: 90%;
+        }
+
+  }
