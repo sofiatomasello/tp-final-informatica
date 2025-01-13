@@ -6,14 +6,14 @@
 
 /* Estilos para los links */
 
-a:visited{ color: rgba(80, 66, 21, 0.988) !important; }
+a:visited{ color: rgba(238, 138, 38, 0.988) !important; }
 a:hover { color: #529355 !important;}
 a:active{color: rgb(218, 28, 28) !important;}
 
 
 /* Imagen header del homepage*/
 .imagen-header{
-    width: 90%; 
+    width: 100%; 
     height: auto;  
     max-height: 75vh;   
     object-fit: cover;  
@@ -21,9 +21,11 @@ a:active{color: rgb(218, 28, 28) !important;}
 
 }
 
+
+
 /* Barra de navegacion*/
 .container-fluid{
-    width: 90%;
+    width: 100%;
 }
 
 
@@ -42,7 +44,7 @@ footer{
     margin: 0 auto;
     text-align: center;
     color: white;
-    width: 90%;
+    width: 100%;
     background-color: #ce2b37;
     border-radius: 0.3em;
 }
