@@ -1,11 +1,14 @@
 
+
+
+/*celular estilos*/
+
 /* Logo de la pagina: bandera de Italia*/
 .logo{
     width: 30%;
 }
 
 /* Estilos para los links */
-
 a:visited{ color: rgba(238, 138, 38, 0.988) !important; }
 a:hover { color: #529355 !important;}
 a:active{color: rgb(218, 28, 28) !important;}
@@ -13,54 +16,80 @@ a:active{color: rgb(218, 28, 28) !important;}
 
 /* Imagen header del homepage*/
 .imagen-header{
-    width: 100%; 
-    height: auto;  
-    max-height: 75vh;   
-    object-fit: cover;  
-    display: block;      
-
+  width: 100%; 
+  height: auto;  
+  max-height: 75vh;   
+  object-fit: cover;  
+  display: block;      
 }
-
-
-
-/* Barra de navegacion*/
-.container-fluid{
-    width: 100%;
-}
-
-
-/* Barra de navegacion*/
-.contenedor-home{
-    display: flex;
-    margin: 0 auto;
-    text-align: center;
-    text-align: justify;
-    width: 90%;
-    margin-bottom: 5em;
-    
-}
-
-footer{
-    margin: 0 auto;
-    text-align: center;
-    color: white;
-    width: 100%;
-    background-color: #ce2b37;
-    border-radius: 0.3em;
-}
-
-.logo-instagram{
-    width: 2em;
-}
-
 
 .imagen-home{
-   
-    border-radius: 0.5em;
-    width: 100%;
-     height: auto;
-      margin-top: 3em;
+  width: 100%;
+  margin: 0 auto;
+  
+  }
+
+
+  /* Imagen */
+  .imagen-enlace img {
+    transition: filter 0.3s, transform 0.3s;
+    
+  }
+
+  /* Efecto al pasar el mouse */
+  .imagen-enlace:hover img {
+    filter: brightness(0.8); /* Oscurece la imagen */
+    transform: scale(1.05); /* Aumenta el tamaño */
+  }
+
+  /* Efecto al hacer clic */
+  .imagen-enlace:active img {
+    filter: brightness(0.4); /* Más oscuro */
+    transform: scale(1.02); /* Reduce el tamaño ligeramente */
+  }
+
+
+  .texto-sobre-imagen {
+    position: absolute; 
+    transform: translate(10%, -160%); 
+    color: white; 
+    font-size: 29px; 
+    font-weight: bold; 
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7); 
+    z-index: 2;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+footer{
+    color: white !important;
+    width: 100% !important;
+    background-color: #ffe07a;
+    padding: 1em;
+  
+}
+
+
+
+
+
+    .h-gastronomia{
+        width: 100%; 
+        height: auto;  
+        height: 30vh; 
+        object-fit: cover;  
+        display: block;    
+         margin-top: 1em;
     }
+
 
 
 
@@ -68,16 +97,38 @@ footer{
 
 
     @media screen and (min-width: 768px) {
+        .h-gastronomia{
+            width: 100%; 
+            height: auto;  
+          height: 40vh; 
+            object-fit: cover;  
+            display: block;    
+             margin-top: 1em;
+        }
+
+        .imagen-header{
+          max-height: 65vh;   
+        }
+
+        .imagen-home{
+          width: 100%;
+        }
+
     }
 
 
 
 
 @media screen and (min-width: 992px) {
-    .imagen-home{
-        float: right;
-        border-radius: 0.5em;
-        width: 90%;
+ 
+
+        .h-gastronomia{
+            width: 100%; 
+            height: auto;  
+          height: 75vh; 
+            object-fit: cover;  
+            display: block;     
         }
 
+      
   }
