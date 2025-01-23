@@ -8,6 +8,9 @@
     width: 30%;
 }
 
+.container-fluid{
+  margin: 0 auto;
+}
 /* Estilos para los links */
 a:visited{ color: rgba(238, 138, 38, 0.988) !important; }
 a:hover { color: #529355 !important;}
@@ -27,6 +30,17 @@ a:active{color: rgb(218, 28, 28) !important;}
   width: 100%;
   margin: 0 auto;
   
+  }
+
+  .purpose{
+   width: 100%;background-color: rgb(86, 160, 95);margin-top:3em;margin-bottom: 3em;padding: 1em; text-align: center;
+  }
+  main .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 3em;
   }
 
 
@@ -72,7 +86,7 @@ a:active{color: rgb(218, 28, 28) !important;}
 footer{
     color: white !important;
     width: 100% !important;
-    background-color: #ffe07a;
+    background-color: #f5908e;
     padding: 1em;
   
 }
@@ -107,13 +121,16 @@ footer{
         }
 
         .imagen-header{
-          max-height: 65vh;   
+          max-height: 50vh;   
         }
 
         .imagen-home{
-          width: 100%;
+          width: 86%;
         }
 
+        .purpose{
+          padding: 3em;
+        }
     }
 
 
@@ -131,4 +148,11 @@ footer{
         }
 
       
+        .imagen-header{
+          max-height: 75vh;   
+        }
+
+        .purpose{
+          padding: 1em;
+        }
   }
