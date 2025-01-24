@@ -32,8 +32,22 @@ a:active{color: rgb(218, 28, 28) !important;}
   
   }
 
-  .purpose{
-   width: 100%;background-color: rgb(86, 160, 95);margin-top:3em;margin-bottom: 3em;padding: 1em; text-align: center;
+  .purpose {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;    /* Centra horizontalmente */
+    text-align: center;     
+          padding-top: 3em;
+          padding-bottom: 3em;
+    margin-top: 3em; 
+    margin-bottom: 3em;
+    background-color: rgb(231, 63, 63);
+  }
+
+  .textopurpose{
+
+  text-align: justify; width: 90%;color: white;
   }
   main .row{
     display: flex;
@@ -86,7 +100,7 @@ a:active{color: rgb(218, 28, 28) !important;}
 footer{
     color: white !important;
     width: 100% !important;
-    background-color: #f5908e;
+    background-color: #477d49;
     padding: 1em;
   
 }
@@ -155,4 +169,20 @@ footer{
         .purpose{
           padding: 1em;
         }
+
+        .textopurpose{
+
+        width: 85%;
+          }
+  }
+
+
+
+  @media screen and (min-width: 1336px) {
+
+    .textopurpose{
+
+      width: 45%;
+    }
+
   }
