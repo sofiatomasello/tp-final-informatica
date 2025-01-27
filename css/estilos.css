@@ -105,8 +105,22 @@ footer{
   
 }
 
+ .d-block {
+max-height: 60ch;
+padding: 0.5em;
 
+background-color: white;
 
+ }
+.carousel-inner{
+  margin-bottom: 5em;
+  ;
+}
+
+ .conteiner-galeria{
+background-color: black;
+height: 100%;
+ }
 
 
     .h-gastronomia{
