@@ -13,8 +13,25 @@
 }
 /* Estilos para los links */
 a:visited{ color: rgba(238, 138, 38, 0.988) !important; }
-a:hover { color: #529355 !important;}
-a:active{color: rgb(218, 28, 28) !important;}
+a:hover { color: #df3f3f !important;}
+a:active{color: rgb(87, 219, 111) !important;}
+
+/* Galeria de fotos*/
+.container-fotos img:hover {
+  filter: brightness(0.8); /* Oscurece la imagen */
+}
+
+.container-fotos img {
+  width: 100%; /* Ajusta el ancho según lo que necesites */
+  height: auto; /* Mantiene la proporción original */
+}
+/* Contenedor general de paginas para centrar */
+.container-general{
+  width: 80%; /* Define un ancho */
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
 
 
 /* Imagen header del homepage*/
@@ -23,38 +40,45 @@ a:active{color: rgb(218, 28, 28) !important;}
   height: auto;  
   max-height: 75vh;   
   object-fit: cover;  
-  display: block;      
+  display: block;   
+  margin: 0 auto;   
 }
 
 .imagen-home{
   width: 100%;
   margin: 0 auto;
-  
+  max-height: 75vh;   
+  object-fit: cover;  
+  display: block;   
+  margin: 0 auto;
   }
 
+
+  
   .purpose {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra verticalmente */
-    align-items: center;    /* Centra horizontalmente */
+    justify-content: center; 
+    align-items: center;    
     text-align: center;     
-          padding-top: 3em;
-          padding-bottom: 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
     margin-top: 3em; 
     margin-bottom: 3em;
-    background-color: rgb(231, 63, 63);
+    width: 100%;
+    background-color: #8e402a;
   }
 
   .textopurpose{
 
-  text-align: justify; width: 90%;color: white;
+  text-align: justify; width: 90%;color: rgb(255, 255, 255);
   }
   main .row{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 3em;
+ 
   }
 
 
@@ -100,7 +124,7 @@ a:active{color: rgb(218, 28, 28) !important;}
 footer{
     color: white !important;
     width: 100% !important;
-    background-color: #477d49;
+    background-color: #608d44;
     padding: 1em;
   
 }
@@ -118,7 +142,7 @@ background-color: white;
 }
 
  .conteiner-galeria{
-background-color: black;
+background-color: rgb(3, 3, 3);
 height: 100%;
  }
 
@@ -134,7 +158,12 @@ height: 100%;
 
 
 
-
+.container-fotos{
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
 
 
 
@@ -158,6 +187,7 @@ height: 100%;
 
         .purpose{
           padding: 3em;
+          width: 100%;
         }
     }
 
@@ -182,6 +212,10 @@ height: 100%;
 
         .purpose{
           padding: 1em;
+        
+            width: 90%;
+        
+      
         }
 
         .textopurpose{
@@ -196,7 +230,11 @@ height: 100%;
 
     .textopurpose{
 
-      width: 45%;
+      width: 80%;
+    }
+
+    .purpose{
+      width: 90%;
     }
 
   }
