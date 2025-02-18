@@ -12,7 +12,7 @@
   margin: 0 auto;
 }
 /* Estilos para los links */
-a:visited{ color: rgba(238, 138, 38, 0.988) !important; }
+a:visited{ color: rgba(134, 222, 215, 0.988) !important; }
 a:hover { color: #df3f3f !important;}
 a:active{color: rgb(87, 219, 111) !important;}
 
@@ -22,17 +22,30 @@ a:active{color: rgb(87, 219, 111) !important;}
 }
 
 .container-fotos img {
-  width: 100%; /* Ajusta el ancho según lo que necesites */
-  height: auto; /* Mantiene la proporción original */
+  width: 100%; 
+  height: auto; 
 }
 /* Contenedor general de paginas para centrar */
 .container-general{
-  width: 80%; /* Define un ancho */
+  width: 80%; 
   align-items: center;
   justify-content: center;
   margin: 0 auto;
 }
 
+
+/* container juego para mobile*/
+.container {
+  display: flex;
+  position: relative;
+  justify-content: center; 
+  align-items: center; 
+width: 100%;
+margin: 0 auto;
+  background-color: rgb(106, 169, 123);
+  padding: 2em;
+
+}
 
 /* Imagen header del homepage*/
 .imagen-header{
@@ -40,7 +53,7 @@ a:active{color: rgb(87, 219, 111) !important;}
   height: auto;  
   max-height: 75vh;   
   object-fit: cover;  
-  display: block;   
+ 
   margin: 0 auto;   
 }
 
@@ -66,12 +79,12 @@ a:active{color: rgb(87, 219, 111) !important;}
     margin-top: 3em; 
     margin-bottom: 3em;
     width: 100%;
-    background-color: #8e402a;
+    background-color: #84b6c0;
   }
 
   .textopurpose{
 
-  text-align: justify; width: 90%;color: rgb(255, 255, 255);
+ width: 90%;color: rgb(255, 255, 255); margin-top: 1em;
   }
   main .row{
     display: flex;
@@ -122,9 +135,9 @@ a:active{color: rgb(87, 219, 111) !important;}
 
 
 footer{
-    color: white !important;
+  
     width: 100% !important;
-    background-color: #608d44;
+    background-color: #816346;
     padding: 1em;
   
 }
@@ -156,7 +169,36 @@ height: 100%;
          margin-top: 1em;
     }
 
+ 
 
+    .header-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(214, 64, 64);
+     
+      font-weight: bold; 
+      text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      width: 100%; 
+    
+     
+  }
+
+  .header-subtext{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(106, 175, 130);
+   
+    font-weight: bold; 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 100%; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
 
 .container-fotos{
   width: 90%;
@@ -180,6 +222,8 @@ height: 100%;
         .imagen-header{
           max-height: 50vh;   
         }
+        
+       
 
         .imagen-home{
           width: 86%;
@@ -189,7 +233,9 @@ height: 100%;
           padding: 3em;
           width: 100%;
         }
-    }
+
+      }
+
 
 
 
@@ -211,9 +257,9 @@ height: 100%;
         }
 
         .purpose{
-          padding: 1em;
+          padding: 4em;
         
-            width: 90%;
+            width: 100%;
         
       
         }
@@ -222,6 +268,8 @@ height: 100%;
 
         width: 85%;
           }
+
+        
   }
 
 
@@ -234,7 +282,73 @@ height: 100%;
     }
 
     .purpose{
-      width: 90%;
+      width: 100%;
     }
 
+
+    .container {
+   width: 40%;
+    
+    }
+    
+
   }
+
+
+  /* diseño de juego */
+button {
+  cursor: pointer;
+}
+
+
+
+#opcionesHtml {
+    display: flex;
+    flex-direction: column; 
+    margin-top: 1em;
+    gap: 1em; 
+    color: white;
+
+  }
+
+  .preguntasyrespuestas{
+    padding: 2em;
+  }
+
+  .opcionesHtml button {
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    border: 1px solid #ccc;
+    background-color: #f8f8f8; 
+  
+
+  }
+  
+  .opcionesHtml button:hover {
+    background-color: #e0e0e0; 
+  }
+
+    
+ 
+
+
+  #temporizador {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 30px;
+    color: #FFF;
+    background-color: red;
+    border-radius: 2em;
+    padding: 0.2em;
+  }
+  
+  #botonJugar {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    border: 1px solid #ccc;
+    background-color: #f8f8f8; 
+  }
+  
