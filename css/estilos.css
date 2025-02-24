@@ -1,62 +1,49 @@
 
-
-
-/*celular estilos*/
+/*MOBILE ESTILOS*/
 
 /* Logo de la pagina: bandera de Italia*/
 .logo{
-    width: 30%;
+    width: 20%;
 }
 
-.container-fluid{
-  margin: 0 auto;
-}
-/* Estilos para los links */
+/* Estilos para los links*/
 a:visited{ color: rgba(134, 222, 215, 0.988) !important; }
 a:hover { color: #df3f3f !important;}
 a:active{color: rgb(87, 219, 111) !important;}
 
-/* Galeria de fotos*/
-.container-fotos img:hover {
-  filter: brightness(0.8); /* Oscurece la imagen */
+
+/*PIE DE PAGINA*/
+footer{
+  background-color: #816346;
+  padding: 1em;
 }
 
-.container-fotos img {
-  width: 100%; 
-  height: auto; 
-}
-/* Contenedor general de paginas para centrar */
+/* Contenedor general de paginas que uso en algunas para centrar */
 .container-general{
-  width: 80%; 
+  width: 85%; 
   align-items: center;
   justify-content: center;
   margin: 0 auto;
 }
 
-
-/* container juego para mobile*/
-.container {
+main .row{
   display: flex;
-  position: relative;
-  justify-content: center; 
-  align-items: center; 
-width: 100%;
-margin: 0 auto;
-  background-color: rgb(106, 169, 123);
-  padding: 2em;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 
 }
 
-/* Imagen header del homepage*/
+/* diseño para header de la mayoria de las paginas*/
 .imagen-header{
   width: 100%; 
   height: auto;  
   max-height: 75vh;   
   object-fit: cover;  
- 
   margin: 0 auto;   
 }
 
+/*DISEÑO DE PAGINA HOMEPAGE*/
 .imagen-home{
   width: 100%;
   margin: 0 auto;
@@ -67,8 +54,7 @@ margin: 0 auto;
   }
 
 
-  
-  .purpose {
+  .purpose { 
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -82,19 +68,73 @@ margin: 0 auto;
     background-color: #84b6c0;
   }
 
-  .textopurpose{
-
+.textopurpose{
  width: 90%;color: rgb(255, 255, 255); margin-top: 1em;
   }
-  main .row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
- 
-  }
 
 
+  .header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(214, 64, 64);
+    font-weight: bold; 
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    width: 100%; 
+  
+   
+}
+
+.header-subtext{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(106, 175, 130);
+  font-weight: bold; 
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  width: 100%; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+
+
+/*DISEÑO DE PAGINA GALERIA DE FOTOS*/
+
+.container-fotos img:hover {
+  filter: brightness(0.8); /*diseño agregado para oscurecer la imagen al pasar el linkk*/
+}
+
+.container-fotos img {
+  width: 100%; 
+  height: auto; 
+}
+
+
+.conteiner-galeria{
+  background-color: rgb(3, 3, 3);
+  height: 100%;
+   }
+  
+   
+.container-fotos{
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+  
+
+
+/*DISEÑO PAGINA GASTRONOMIA*/
   /* Imagen */
   .imagen-enlace img {
     transition: filter 0.3s, transform 0.3s;
@@ -110,7 +150,7 @@ margin: 0 auto;
   /* Efecto al hacer clic */
   .imagen-enlace:active img {
     filter: brightness(0.4); /* Más oscuro */
-    transform: scale(1.02); /* Reduce el tamaño ligeramente */
+    transform: scale(1.02); /* Reduce el tamaño*/
   }
 
 
@@ -125,41 +165,6 @@ margin: 0 auto;
     
   }
 
-
-
-
-
-
-
-
-
-
-footer{
-  
-    width: 100% !important;
-    background-color: #816346;
-    padding: 1em;
-  
-}
-
- .d-block {
-max-height: 60ch;
-padding: 0.5em;
-
-background-color: white;
-
- }
-.carousel-inner{
-  margin-bottom: 5em;
-  ;
-}
-
- .conteiner-galeria{
-background-color: rgb(3, 3, 3);
-height: 100%;
- }
-
-
     .h-gastronomia{
         width: 100%; 
         height: auto;  
@@ -171,62 +176,171 @@ height: 100%;
 
  
 
-    .header-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: rgb(214, 64, 64);
-     
-      font-weight: bold; 
-      text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
-      text-align: center;
-      width: 100%; 
-    
-     
-  }
 
-  .header-subtext{
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(106, 175, 130);
-   
-    font-weight: bold; 
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-    text-align: center;
-    width: 100%; 
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
 
-.container-fotos{
+
+
+
+/*DISEÑO DE PAGINA COMIDAS TIPICAS*/
+/* Imagenes de la pagina comidas tipicas width */
+.imagenes-comida{
+width: 100%;
+
+}
+
+
+/* Titulo del header de comidas tipicas*/
+.header-container h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 1.2em;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
   width: 90%;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+}
+
+
+/*Boton del header comidas tipicas*/
+.header-container a.btn {
+
+  font-size: 0.9em; 
+  padding: 4px ; 
+  position: absolute; top: 70%; left: 50%; transform: translate(-50%);
+}
+
+
+/*Contenedor de las section de comidas tipicas*/
+.contenedor-comidas{
+  width: 100%;
 }
 
 
 
+/*DISEÑO PAGINA JUEG0*/
+/* container juego para mobile*/
+.container {
+  display: flex;
+  position: relative;
+  justify-content: center; 
+  align-items: center; 
+width: 100%;
+margin: 0 auto;
+  background-color: rgb(106, 169, 123);
+  padding: 2em;
+
+}
+
+  button {
+    cursor: pointer;
+  }
+  
+  #opcionesHtml {
+      display: flex;
+      flex-direction: column; 
+      margin-top: 1em;
+      gap: 1em; 
+      color: white;
+  
+    }
+  
+    .preguntasyrespuestas{
+      padding: 2em;
+    }
+  
+    .opcionesHtml button {
+      padding: 10px 20px; 
+      border-radius: 8px; 
+      border: 1px solid #ccc;
+      background-color: #f8f8f8; 
+    
+  
+    }
+    
+    .opcionesHtml button:hover {
+      background-color: #e0e0e0; 
+    }
+  
+      
+    .card-title{
+      text-decoration: none;
+  
+    }
+    
+    #temporizador {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      font-size: 30px;
+      color: #FFF;
+      background-color: red;
+      border-radius: 2em;
+      padding: 0.2em;
+    }
+    
+    #botonJugar {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 20px; 
+      border-radius: 8px; 
+      border: 1px solid #ccc;
+      background-color: #f8f8f8; 
+    
+    }
+    
+  
+
+
+
+
+
+ /* ESTILOS PPARA PAGINAS APARTIR DE 576PX (pequeño) */
+@media screen and (min-width: 576px ) {
+
+
+  .imagenes-comida{
+    width: 100%;
+    height: 38vh; 
+    object-fit: cover; 
+    }
+
+
+    .header-container h1 {
+      top: 45%;
+      left: 50%;
+      width: 70%;
+    }
+
+    .header-container a.btn {
+     top: 65%; left: 50%;
+    }
+
+ 
+  
+}
+
+
+
+
+
+ /* ESTILOS PPARA PAGINAS APARTIR DE 768PX(mediano) */
     @media screen and (min-width: 768px) {
         .h-gastronomia{
-            width: 100%; 
-            height: auto;  
+          width: 100%; 
+          height: auto;  
           height: 40vh; 
-            object-fit: cover;  
-            display: block;    
-             margin-top: 1em;
+          object-fit: cover;  
+          display: block;    
+          margin-top: 1em;
         }
 
         .imagen-header{
           max-height: 50vh;   
         }
         
-       
-
+    
         .imagen-home{
-          width: 86%;
+         width: 86%;
         }
 
         .purpose{
@@ -234,121 +348,127 @@ height: 100%;
           width: 100%;
         }
 
+        .imagenes-comida{
+          width: 100%;
+          height: 38vh; 
+          object-fit: cover; 
+          }
+
+    .contenedor-comidas{
+     width: 85%;
+    display: block; 
+     margin: 0 auto; 
       }
 
+    .header-container h1 {
+     top: 50%;
+     width: 50%;
+     }
+      
+    .header-container a.btn {
+    top: 65%;
+    }
+
+
+    
+            
+          }
+      
 
 
 
 
+ /* ESTILOS PPARA PAGINAS APARTIR DE 768PX(grande) */
 @media screen and (min-width: 992px) {
  
 
-        .h-gastronomia{
-            width: 100%; 
-            height: auto;  
-          height: 75vh; 
-            object-fit: cover;  
-            display: block;     
-        }
+    .h-gastronomia{
+     width: 100%; 
+     height: auto;  
+     height: 75vh; 
+     object-fit: cover;  
+     display: block;     
+     }
 
       
-        .imagen-header{
-          max-height: 75vh;   
-        }
+    .imagen-header{
+    max-height: 75vh;   
+    }
 
-        .purpose{
-          padding: 4em;
+    .purpose{
+    padding: 4em;
+    width: 100%;
+     }
+
+   .textopurpose{
+    width: 85%;
+    }
+
+  .imagenes-comida{
+   width: 100%;
+   }
         
-            width: 100%;
-        
-      
-        }
+  .contenedor-comidas{
+   width: 80%;
+   display: block; 
+   margin: 0 auto; 
+   }
 
-        .textopurpose{
+  .imagen-header{
+   max-height: 60vh;             
+  }
 
-        width: 85%;
-          }
-
-        
+  .header-container h1 {
+  top: 50%;
+  width: 100%;
+  }
+            
+  .header-container a.btn {
+          
+   top: 65%; 
+  }
   }
 
 
 
-  @media screen and (min-width: 1336px) {
+ /* ESTILOS PPARA PAGINAS APARTIR DE 768PX(ectra grande) */
+  @media screen and (min-width: 1200px) {
 
-    .textopurpose{
+  .textopurpose{
+  width: 80%;
+   }
 
-      width: 80%;
-    }
-
-    .purpose{
-      width: 100%;
-    }
+  .purpose{
+  width: 100%;
+   }
 
 
-    .container {
+  .container {
    width: 40%;
     
     }
     
+  .imagenes-comida{
+   width: 100%;
+  }
 
+  .contenedor-comidas{
+   width: 60%;
+   display: block; 
+   margin: 0 auto; 
   }
 
 
-  /* diseño de juego */
-button {
-  cursor: pointer;
-}
-
-
-
-#opcionesHtml {
-    display: flex;
-    flex-direction: column; 
-    margin-top: 1em;
-    gap: 1em; 
-    color: white;
-
-  }
-
-  .preguntasyrespuestas{
-    padding: 2em;
-  }
-
-  .opcionesHtml button {
-    padding: 10px 20px; 
-    border-radius: 8px; 
-    border: 1px solid #ccc;
-    background-color: #f8f8f8; 
+  .header-container h1 {
+  top: 50%;
+  font-size: 2.5em;
+  width: 100%;
+   }
   
-
+  .header-container a.btn {
+  font-size: 1.3em;
+  top: 65%; 
+   }
   }
-  
-  .opcionesHtml button:hover {
-    background-color: #e0e0e0; 
-  }
-
-    
- 
 
 
-  #temporizador {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    font-size: 30px;
-    color: #FFF;
-    background-color: red;
-    border-radius: 2em;
-    padding: 0.2em;
-  }
-  
-  #botonJugar {
-    display: block;
-    margin: 0 auto;
-    padding: 10px 20px; 
-    border-radius: 8px; 
-    border: 1px solid #ccc;
-    background-color: #f8f8f8; 
-  }
-  
