@@ -154,8 +154,9 @@ position: relative;
 }
 
 
-  
-
+.destino-container:hover .imagen-enlace {
+  filter: brightness(0.75) contrast(1.1);
+}
 
 /*DISEÑO PAGINA GASTRONOMIA*/
   /* Imagen */
@@ -185,8 +186,26 @@ position: relative;
     font-weight: bold; 
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7); 
     z-index: 2;
-    
   }
+
+  
+    .destino-container {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .texto-sobre-imagen-destinos {
+      position: absolute;
+      transform: translate(90%, -180%); 
+    color: white;
+      opacity: 0;
+      text-shadow: 4px 4px 10px rgba(4, 4, 4, 0.8);
+      transition: opacity 0.3s ease-in-out;
+    }
+    
+    .destino-container:hover .texto-sobre-imagen-destinos {
+      opacity: 1;
+    }
 
     .h-gastronomia{
         width: 100%; 
@@ -499,6 +518,12 @@ width: 100%;
   font-size: 1.3em;
   top: 65%; 
    }
+
+     
+   .texto-sobre-imagen-destinos {
+    transform: translate(100%, -180%);
+    font-size: 29px;
+  }
   }
 
 
