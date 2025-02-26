@@ -6,16 +6,18 @@
     width: 20%;
 }
 
+
 /* Estilos para los links*/
-a:visited{ color: rgba(134, 222, 215, 0.988) !important; }
+a:visited{ color: rgba(155, 213, 208, 0.988) !important; }
 a:hover { color: #df3f3f !important;}
-a:active{color: rgb(87, 219, 111) !important;}
+a:active{color: rgb(89, 180, 105) !important;}
 
 
 /*PIE DE PAGINA*/
 footer{
   background-color: #816346;
   padding: 1em;
+  margin-top: auto;
 }
 
 /* Contenedor general de paginas que uso en algunas para centrar */
@@ -72,7 +74,28 @@ main .row{
  width: 90%;color: rgb(255, 255, 255); margin-top: 1em;
   }
 
+  .conteineralbums{
+    width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  }
+  
+  .conteineralbums img{
+    width: 80%;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    cursor: pointer;
+  }
 
+  .conteineralbums img:hover {
+    filter: brightness(0.8); /*diseño agregado para oscurecer la imagen al pasar el linkk*/
+  }
+
+  .div-relative{
+position: relative;
+  }
   .header-text {
     position: absolute;
     top: 50%;
@@ -224,11 +247,10 @@ width: 100%;
   position: relative;
   justify-content: center; 
   align-items: center; 
-width: 100%;
-margin: 0 auto;
+  margin: 0 auto;
   background-color: rgb(106, 169, 123);
   padding: 2em;
-
+  margin-bottom: 3em;
 }
 
   button {
@@ -244,13 +266,15 @@ margin: 0 auto;
   
     }
   
+
+
     .preguntasyrespuestas{
       padding: 2em;
     }
   
     .opcionesHtml button {
       padding: 10px 20px; 
-      border-radius: 8px; 
+      border-radius: 25px; 
       border: 1px solid #ccc;
       background-color: #f8f8f8; 
     
@@ -370,7 +394,9 @@ margin: 0 auto;
     }
 
 
-    
+    .logo{
+      width: 30%;
+  }
             
           }
       
@@ -381,6 +407,9 @@ margin: 0 auto;
  /* ESTILOS PPARA PAGINAS APARTIR DE 768PX(grande) */
 @media screen and (min-width: 992px) {
  
+  .logo{
+    width: 30%;
+}
 
     .h-gastronomia{
      width: 100%; 
