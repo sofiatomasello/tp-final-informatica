@@ -1,6 +1,13 @@
 
 /*MOBILE ESTILOS*/
 
+.contenedor-texto {
+  position: relative; /* Importante para el posicionamiento absoluto */
+}
+
+
+
+
 /* Logo de la pagina: bandera de Italia*/
 .logo{
     width: 20%;
@@ -34,16 +41,12 @@ width: 90%;
 }
 
 
-
-
-
 /* diseño para header de la mayoria de las paginas*/
 .imagen-header{
-  width: 100%; 
-  height: auto;  
+  width: 100%;  
   max-height: 75vh;   
   object-fit: cover;  
-  margin: 0 auto;   
+ 
 }
 
 /*PIE DE PAGINA*/
@@ -51,13 +54,24 @@ footer{
   background-color: #816346;
   padding: 1em;
   margin-top: auto;
+
+   width: 100%;
 }
 
 
 
+.contacto {
+  width: 100%;
+  padding: 1em;
+}
 
+.contacto-img{
+  width: 100%;
+}
 
-
+.formulario{
+margin-top: 3em;
+}
 /* Contenedor general de paginas que uso en algunas para centrar */
 .container-general{
   width: 85%; 
@@ -83,13 +97,23 @@ main .row{
   }
 
 
-
+  .header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(225, 93, 93);
+    font-weight: bold; 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 100%; 
+  }
 
 
 
 .header-subtext{
   position: absolute;
-  top: 60%;
+  top: 63%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(106, 175, 130);
@@ -207,11 +231,7 @@ width: 100%;
 }
 
 
-/*Contenedor de las section de comidas tipicas*/
-.contenedor-comidas{
-  width: 100%;
-  padding: 0.7em;
-}
+
 
 .imagen-receta{
   width: 100%;
@@ -219,9 +239,10 @@ width: 100%;
   border-radius: 0; /* Asegura que no haya bordes redondeados */
 }
 
+
 /*DISEÑO PAGINA JUEG0*/
 /* container juego para mobile*/
-.container {
+.container-juego {
   display: flex;
   position: relative;
   justify-content: center; 
@@ -231,6 +252,9 @@ width: 100%;
   padding: 2em;
   margin-bottom: 3em;
 }
+
+
+
 
   button {
     cursor: pointer;
@@ -370,8 +394,13 @@ width: 100%;
 
     .conteineralbums img {
       width: 90%;
+    }
 
-
+    
+    .header-subtext{
+      
+      top: 58%;
+  
     }
  
 }
@@ -387,17 +416,31 @@ width: 100%;
       
         }
 
+
+        .header-subtext{
+      
+          top: 58%;
+      
+        }
+
         .imagen-receta{
           width: 90%;
           border-top-right-radius: 50%; 
           border-bottom-right-radius: 50%; 
-     
-        
       }
      
+      .formulario{
+        margin-top: 0em;
+        }
         .imagen-header{
           max-height: 50vh;   
         }
+
+        
+#carouselExampleCaptions .carousel-item img { 
+  max-height: 50vh;   
+  
+}
         
     
 
@@ -407,11 +450,6 @@ width: 100%;
   
           }
 
-          .contenedor-comidas{
-            width: 90%;
-            display: block; 
-            margin: 0 auto; 
-            }
     .header-container h1 {
      top: 50%;
      width: 50%;
@@ -443,12 +481,22 @@ width: 100%;
      height: 75vh; 
      }
 
-      
-    .imagen-header{
-    max-height: 75vh;   
+  
+
+    
+#carouselExampleCaptions .carousel-item img {
+ 
+  max-height: 75vh;   
+  
+}
+    .contacto {
+      padding: 2em;
     }
-
-
+    
+    .contacto-img{
+      width: 75%;
+     
+    }
   
     .purpose{
     padding: 4em;
@@ -463,13 +511,10 @@ width: 100%;
    width: 100%;
    }
         
-  .contenedor-comidas{
-   width: 85%;
-   
-   }
+
 
   .imagen-header{
-   max-height: 60vh;             
+   max-height: 75vh;             
   }
 
   .header-container h1 {
@@ -511,18 +556,12 @@ width: 100%;
 
 
 
-  .container {
-   width: 40%;
-    
-    }
+  
     
   .imagenes-comida{
    width: 100%;
   }
 
-  .contenedor-comidas{
-   width: 60%;
-  }
 
 
   .header-container h1 {
