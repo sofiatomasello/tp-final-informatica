@@ -5,12 +5,16 @@
   position: relative; /* Importante para el posicionamiento absoluto */
 }
 
-
+h1,h2,p,h3,h4,h5,a,li{
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
 
 
 /* Logo de la pagina: bandera de Italia*/
 .logo{
-    width: 20%;
+    width: 30%;
 }
 .modal-body{
  background-color: rgb(238, 228, 215);
@@ -137,7 +141,7 @@ main .row{
 .container-fotos img {
   width: 100%; 
   height: auto; 
-  border-radius: 1em;
+
 }
 
 
