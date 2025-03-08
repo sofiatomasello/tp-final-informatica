@@ -1,104 +1,231 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curiosdidades de Italia</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Curiosididades de Italia</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
+
+
+    <!-- Utilizo cards de boostrap-->
 <body>
 
     <!-- Barra de Navegacion + Menu hamburguesa para medidas chicas-->
 <header>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="nav-link" href="../index.html"><img class="logo" src="../imagenes-principales/logo-bandera.png" alt="Logo de la página Bella Italia"></a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <a class="nav-link" href="../index.html"><img class="logo" src="../imagenes-principales/logo-bandera.png" alt="Logo de bandera de italia"></a>
+      
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item pt-2 pt-lg-0">
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item pt-2 pt-lg-0">
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../gastronomia/index.html">Gastronomía</a>
-          </li>
-          <li class="nav-item pt-2 pt-lg-0">
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../galeria-de-fotos/index.html">Galería de fotos</a>
-          </li>
-          <li class="nav-item pt-2 pt-lg-0">
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../geografia/index.html">Geografía</a>
-          </li>
-          <li class="nav-item pt-2 pt-lg-0">
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../curiosidades/">Curiosidades</a>
-          </li>
-          <li class="nav-item pt-2 pt-lg-0">
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../juego/index.html">Juego</a>
-          </li>
-          <li class="nav-item dropdown pt-2 pt-lg-0">
-            <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../historia/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Destinos
-            </a>
-            <ul class="dropdown-menu text-bg-danger">
-              <li><a class="dropdown-item text-light" href="../destinos/lugares/index.html">Lugares imperdibles</a></li>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-start"> <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../consejos/index.html">Consejos</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../galeria-de-fotos/index.html">Galería de fotos</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../geografia/index.html">Geografía</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../curiosidades/index.html">Curiosidades</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../juego/index.html">Juego</a>
+                </li>
+                <li class="nav-item dropdown pt-2 pt-lg-0">
+                    <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../destinos/lugares/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Destinos
+                    </a>
+                    <ul class="dropdown-menu text-bg-danger">
+                        <li><a class="dropdown-item text-light" href="../destinos/lugares/index.html">Lugares imperdibles</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown pt-2 pt-lg-0">
+                    <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../patrimonio-italiano/gastronomia/bebidas/bebidas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Patrimonio Italiano
+                    </a>
+                    <ul class="dropdown-menu text-bg-danger p-3">
+                      <li><a class="dropdown-item text-light" href="../patrimonio-italiano/cultura/index.html">Tradiciones y Aspectos Sociales</a></li>
+                      <li><a class="dropdown-item text-light" href="../patrimonio-italiano/arte/index.html">Arte</a></li>
+                      <li><a class="dropdown-item text-light" href="../patrimonio-italiano/musica/index.html">Música</a></li>
+                      <li><a class="dropdown-item text-light" href="../patrimonio-italiano/gastronomia/index.html">Gastronomía</a></li>
+                      <li><a class="dropdown-item text-light" href="../patrimonio-italiano/deporte/index.html">Deportes</a></li>
+                    </ul>
+                </li>
             </ul>
-          </li>
-          <li class="nav-item dropdown pt-2 pt-lg-0">
-            <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../historia/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Historia
-            </a>
-            <ul class="dropdown-menu text-bg-danger p-3">
-              <li><a class="dropdown-item text-light" href="../historia/index.html">Cultura</a></li>
-              <li><a class="dropdown-item text-light" href="../historia/arte/index.html">Arte</a></li>
-              <li><a class="dropdown-item text-light" href="../gastronomia/index.html">Música</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown pt-2 pt-lg-0">
-            <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Actividades
-            </a>
-            <ul class="dropdown-menu text-bg-danger p-3">
-              <li><a class="dropdown-item text-light" href="../albums/index.html">¿Viajas solo?</a></li>
-              <li><a class="dropdown-item text-light" data-bs-toggle="modal" data-bs-target="#modalColaboraciones" href="#">¿Viajas acompañado?</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+        </div>
     </div>
-  </nav>
+</nav>
+ <img src="imagen/header.jpg" class="imagen-header" alt="">
   </header>
 
-<main >
-<section>
+        <!-- Contenedor -->
+<main class="min-height-full">
+  <section class="py-5">
+    <div class="container">
+      <h1 class="text-center mb-5 text-light bg-danger p-3 rounded">Curiosidades sobre Italia</h1>
+      
+      <!-- Utilizo cards -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        
+        <!-- Item 1 -->
+        <div class="col">
+          <div class="card shadow-sm rounded color-beige">
+            <div class="card-body">
+              <h5 class="card-title text-success">Italia tiene más Patrimonios de la Humanidad</h5>
+              <p class="card-text">
+                Es el país con más sitios UNESCO, incluyendo Pompeya, el Coliseo y la Torre de Pisa.
+              </p>
+            </div>
+          </div>
+        </div>
 
-<div >
-  <h1 class="text-center p-3 text-success">Curiosidades sobre Italia</h1>
-  <ul>
-      <li class="p-3"><strong>Italia tiene más Patrimonios de la Humanidad</strong><br>Es el país con más sitios UNESCO, incluyendo Pompeya, el Coliseo y la Torre de Pisa.</li>
-      <li class="p-3"><strong> La pizza nació en Nápoles</strong><br>La pizza Margarita fue creada en 1889 en honor a la reina Margarita de Saboya.</li>
-      <li class="p-3"><strong>Carnaval de Venecia y sus máscaras</strong><br>Se usan desde el siglo XIII para permitir la interacción sin distinción de clases sociales.</li>
-      <li class="p-3"><strong>Italia alberga dos estados independientes</strong><br>El Vaticano y San Marino están dentro del territorio italiano.</li>
-      <li class="p-3"><strong>Pasión por los autos deportivos</strong><br>Italia es la cuna de marcas icónicas como Ferrari, Lamborghini y Maserati.</li>
-      <li class="p-3"><strong>Cuna de la ópera</strong><br>Compositores como Verdi y Puccini son italianos, y La Scala de Milán es un teatro de renombre.</li>
-      <li class="p-3"><strong>Reglas del café en Italia</strong><br>El capuchino solo se toma en la mañana, y el espresso se bebe de pie y en pocos sorbos.</li>
-      <li class="p-3"><strong>Venecia se hunde lentamente</strong><br>Se estima que baja 1-2 mm por año debido al nivel del agua.</li>
-      <li class="p-3"><strong>Alfabeto italiano con 21 letras</strong><br>No usa J, K, W, X e Y, salvo en palabras extranjeras.</li>
-      <li class="p-3"><strong>Universidad más antigua de Europa</strong><br>La Universidad de Bolonia fue fundada en 1088 y sigue activa.</li>
-  </ul>
-</div>
+        <!-- Item 2 -->
+        <div class="col">
+          <div class="card shadow-sm rounded color-beige">
+            <div class="card-body">
+              <h5 class="card-title text-success">La pizza nació en Nápoles</h5>
+              <p class="card-text">
+                La pizza Margarita fue creada en 1889 en honor a la reina Margarita de Saboya.
+              </p>
+            </div>
+          </div>
+        </div>
 
-</section>
+        <!-- Item 3 -->
+        <div class="col">
+          <div class="card shadow-sm rounded color-beige">
+            <div class="card-body">
+              <h5 class="card-title text-success">Carnaval de Venecia y sus máscaras</h5>
+              <p class="card-text">
+                Se usan desde el siglo XIII para permitir la interacción sin distinción de clases sociales.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="col">
+          <div class="card shadow-sm rounded color-beige">
+            <div class="card-body">
+              <h5 class="card-title text-success">Italia alberga dos estados independientes</h5>
+              <p class="card-text">
+                El Vaticano y San Marino están dentro del territorio italiano.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="col">
+          <div class="card shadow-sm rounded color-beige">
+            <div class="card-body">
+              <h5 class="card-title text-success">Pasión por los autos deportivos</h5>
+              <p class="card-text">
+                Italia es la cuna de marcas icónicas como Ferrari, Lamborghini y Maserati.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="col">
+          <div class="card shadow-sm rounded color-beige">
+            <div class="card-body">
+              <h5 class="card-title text-success">Cuna de la ópera</h5>
+              <p class="card-text">
+                Compositores como Verdi y Puccini son italianos, y La Scala de Milán es un teatro de renombre.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="col">
+          <div class="card shadow-sm rounded color-beige">
+            <div class="card-body">
+              <h5 class="card-title text-success">Reglas del café en Italia</h5>
+              <p class="card-text">
+                El capuchino solo se toma en la mañana, y el espresso se bebe de pie y en pocos sorbos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="col">
+          <div class="card shadow-sm rounded color-beige">
+            <div class="card-body">
+              <h5 class="card-title text-success">Venecia se hunde lentamente</h5>
+              <p class="card-text">
+                Se estima que baja 1-2 mm por año debido al nivel del agua.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 9 -->
+        <div class="col">
+          <div class="card shadow-sm rounded color-beige">
+            <div class="card-body">
+              <h5 class="card-title text-success">Alfabeto italiano con 21 letras</h5>
+              <p class="card-text">
+                No usa J, K, W, X e Y, salvo en palabras extranjeras.
+              </p>
+            </div>
+          </div>
+        </div>
+
+    
+      </div>
+    </div>
+  </section>
 
 
 
 </main>
 
+
+  <!--Pie de pagina -->
+  <div class="p-0 ">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center">
+      <div class="col-md-4 text-white">
+        <a class="mb-3 mb-md-0 pe-2" href="../formulario/index.html">Contacto</a>
+        <a class="mb-3 mb-md-0" href="../sobre-mi/index.html">Sobre</a>
+      </div>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-white" href="https://x.com/sofitomasello" target="_blank"><i class="bi bi-twitter" style="font-size: 24px;"></i></a></li>
+        <li class="ms-3"><a class="text-white" href="https://www.instagram.com/sofitomasello/?next=%2F" target="_blank"><i class="bi bi-instagram" style="font-size: 24px;"></i></a></li>
+        <li class="ms-3"><a class="text-white" href="https://www.facebook.com/sofi.tomasello" target="_blank"><i class="bi bi-facebook" style="font-size: 24px;"></i></a></li>
+      </ul>
+    </footer>
+  </div>
+  
+  
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

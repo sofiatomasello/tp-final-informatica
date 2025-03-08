@@ -1,21 +1,28 @@
+//Trivia sobre Italia
+
+// Array de preguntas para el juegoo de Italia
+// Cada objeto en el array contiene:
+// - 'pregunta': La pregunta que se va a hacer al usuario.
+// - 'opciones': Un array con las opciones de respuesta posibles.
+// - 'correcta': La respuesta correcta a la pregunta.
+
 const preguntas = [
   { pregunta: "¿Cuál es la capital de Italia?", opciones: ["Roma", "Milán", "Venecia"], correcta: "Roma" },
   { pregunta: "¿Qué forma tiene Italia en un mapa?", opciones: ["Forma de un sombrero", "Forma de una estrella", "Forma de una bota"], correcta: "Forma de una bota" },
   { pregunta: "¿Qué monumento famoso está inclinado?", opciones: ["Torre Eiffel", "Torre de Pisa", "Torre de Londres"], correcta: "Torre de Pisa" },
-  { pregunta: "¿Qué colores tiene la bandera italiana?", opciones: ["Rojo, blanco y azul", "Verde, blanco y rojo", "Amarillo, blanco y verde"], correcta: "Verde, blanco y rojo" },
+  { pregunta: "¿Qué colores tiene la bandera italiana?", opciones: ["Rojo, blanco y azul", "Amarillo, blanco y verde ", "Verde, blanco y rojo"], correcta: "Verde, blanco y rojo" },
   { pregunta: "¿Qué región italiana es famosa por producir vino Chianti?", opciones: ["Toscana", "Piamonte", "Lombardía"], correcta: "Toscana" },
   { pregunta: "¿Qué dulce italiano es conocido como un postre helado de leche y crema?", opciones: ["Gelato", "Tiramisú", "Panna Cotta"], correcta: "Gelato" },
-  { pregunta: "¿En qué ciudad italiana se encuentra el Coliseo?", opciones: ["Roma", "Florencia", "Nápoles"], correcta: "Roma" },
+  { pregunta: "¿En qué ciudad italiana se encuentra el Coliseo?", opciones: ["Florencia", "Roma", "Nápoles"], correcta: "Roma" },
   { pregunta: "¿Qué movimiento artístico nació en Italia durante el siglo XIV?", opciones: ["Romanticismo", "Renacimiento", "Barroco"], correcta: "Renacimiento" },
   { pregunta: "¿Qué famoso plato italiano se originó en Nápoles?", opciones: ["Pizza", "Espaguetis", "Risotto"], correcta: "Pizza" },
-  { pregunta: "¿Cuál es la capital de la moda en Italia?", opciones: ["Roma", "Milán", "Venecia"], correcta: "Milán" },
-  { pregunta: "¿Qué isla italiana es conocida por su lujo y paisajes paradisíacos?", opciones: ["Capri", "Sicilia", "Elba"], correcta: "Capri" },
+  { pregunta: "¿Cuál es la capital de la moda en Italia?", opciones: ["Roma", "Venecia", "Milán"], correcta: "Milán" },
+  { pregunta: "¿Qué isla italiana es conocida por su lujo y paisajes paradisíacos?", opciones: ["Elba", "Sicilia", "Capri"], correcta: "Capri" },
   { pregunta: "¿Qué famoso artista pintó el techo de la Capilla Sixtina?", opciones: ["Leonardo da Vinci", "Miguel Ángel", "Rafael"], correcta: "Miguel Ángel" },
   { pregunta: "¿Qué mar rodea a Italia?", opciones: ["Mar Caribe", "Mar Mediterráneo", "Mar del Norte"], correcta: "Mar Mediterráneo" },
   { pregunta: "¿Qué famoso cuadro de Leonardo da Vinci se encuentra en Italia?", opciones: ["La Última Cena", "Mona Lisa", "La Virgen de las Rocas"], correcta: "La Última Cena" },
-  { pregunta: "¿Qué ciudad italiana es famosa por sus canales?", opciones: ["Venecia", "Milán", "Génova"], correcta: "Venecia" }
+  { pregunta: "¿Qué ciudad italiana es famosa por sus canales?", opciones: ["Génova", "Milán", "Venecia"], correcta: "Venecia" }
 ];
-
 
 // Variables para llevar el seguimiento del juego
 let preguntaActual = 0; // Índice de la pregunta actual.
@@ -31,14 +38,16 @@ let temporizadorActivo = true; // Activar/Desactivar el conteo de segundos
 const preguntastrivia = document.getElementById("preguntaHtml");
 const opcionestrivia= document.getElementById("opcionesHtml");
 const resultado = document.getElementById("resultadosHtml");
-const reiniciarboton = document.getElementById("reinicioHtml");
-const tiempoLimiteDeCadaPregunta = 20; // Tiempo en segundos para responder cada pregunta
+const tiempoLimiteDeCadaPregunta = 15; // Tiempo en segundos para responder cada pregunta
 
 function comenzarJuego() {
     botonJugar.style.display = "none";
     contenedorJuego.style.display = "flex";
     mostrarPregunta();
     temporizadorSonido.play();
+    preguntastrivia.style.display = "block";
+    opcionestrivia.style.display = "flex";
+    temporizadorHtml.style.display = "block";
 }
 
 // // Función para mostrar la pregunta actual enn pantalla
@@ -49,7 +58,7 @@ function mostrarPregunta() {
 
     
 
-   //  // Genera botones para cada opción de respuesta
+   // Genera botones para cada opción de respuesta
    pregunta.opciones.forEach(function(opcion) {
     const button = document.createElement("button");
     button.textContent = opcion;
@@ -79,7 +88,7 @@ botones.forEach(function(boton) {
     boton.disabled = true; // Deshabilita los botones después de seleccionar.
 });
 
-     // Si la respuesta es correcta, suma un puntooo
+     // Si la respuesta es correcta, suma un puntooo y suena el sonido de correcto en el caso de que no sonido de error
     if (opcionSeleccionada === pregunta.correcta) {
         puntaje++;
         aciertoSonido.play();
@@ -125,33 +134,29 @@ function mostrarResultado() {
     resultado.innerHTML = 
         "<h2>Juego terminado</h2>" +
         "<p>Tu puntaje es: <strong>" + puntaje + "</strong> de <strong>" + preguntas.length + "</strong></p>" + 
-        "<p>" + mensajeFinal + "</p>";
+        "<p>" + mensajeFinal + "</p>" +
+        "<button onclick='reiniciarJuego()'>Reiniciar</button>";
 
-    reiniciarboton.style.display = "block";
     temporizadorHtml.style.display = "none";
 }
 
 // Función para reiniciar el juego
-reiniciarboton.onclick = function() {
+function reiniciarJuego() {
     preguntaActual = 0;
     puntaje = 0;
-    preguntastrivia.style.display = "block";
-    opcionestrivia.style.display = "flex";
-    resultado.textContent = "";
-    reiniciarboton.style.display = "none";
-    temporizadorHtml.style.display = "block";
-    mostrarPregunta();
-    temporizadorSonido.play();
-};
+    contenedorJuego.style.display = "none"
+    botonJugar.style.display = "block";
+    resultado.innerHTML = "";
+}
 
-/* Temporizador =============== */
-var tiempoRestante = 10;
+/* Temporizador */
+var tiempoRestante = 15;
 var tiempoIntervalo;
 
 function comenzarTemporizador() {
     clearInterval(tiempoIntervalo);
     temporizadorActivo = true;
-    tiempoRestante = 10;
+    tiempoRestante = 15;
     temporizadorHtml.textContent = tiempoRestante;
     tiempoIntervalo = setInterval(function() {
         if(temporizadorActivo) {
@@ -165,9 +170,9 @@ function comenzarTemporizador() {
     }, 1000);
 }
 
-/* ============================ */
 
-/* Sonidos ==================== */
+
+/* Sonidos a utilizarr*/
 const temporizadorSonido = new Audio("sonidos/temporizador.wav");
 temporizadorSonido.loop = true; // Si termina vuelve a empezar
 temporizadorSonido.volume = 0.5; // Ajustar volumen (0.0 a 1.0)

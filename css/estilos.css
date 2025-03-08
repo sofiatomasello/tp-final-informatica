@@ -1,29 +1,85 @@
 
 /*MOBILE ESTILOS*/
 
-.contenedor-texto {
-  position: relative; /* Importante para el posicionamiento absoluto */
+
+/*Paleta de colores a ultilizar debido a que boostrap no tiene los colores que deseo*/
+.color-verde{
+background-color: rgb(113, 129, 89);
 }
 
-h1,h2,p,h3,h4,h5,a,li{
+.color-beige{
+background-color: beige;
+}
+
+.color-marron{
+background-color: rgb(119, 90, 90);
+}
+
+.color-rojo{
+ background-color: #eb3c3c;
+  }
+
+  .color-celeste{
+    background-color: #84b6c0;
+  }
+
+  
+/*Aplico Tipografia a todo con Google Fonts*/
+body{
   font-family: "Merriweather", serif;
   font-weight: 300;
   font-style: normal;
 }
 
-
+/*Aplico a textos debido  a que boostrap no me recone el text-justify*/
+.text-justify-css{
+text-align: justify;
+}
 /* Logo de la pagina: bandera de Italia*/
 .logo{
     width: 30%;
 }
-.modal-body{
- background-color: rgb(238, 228, 215);
-}
 
 /* Estilos para los links*/
-a:visited{ color: rgba(155, 213, 208, 0.988) !important; }
-a:hover { color: #df3f3f !important;}
+a:link{ color: rgba(0, 0, 0, 0.988) !important; }
+a:visited{ color: rgba(255, 165, 81, 0.988) !important; }
+a:hover { color: #d82d2d !important;}
 a:active{color: rgb(89, 180, 105) !important;}
+
+/* diseño para header de la mayoria de las paginas*/
+.imagen-header{
+  width: 100%;  
+  max-height: 75vh;   
+  object-fit: cover;  
+}
+
+/* Contenedor general de paginas que uso en algunas para centrar */
+.container-general{
+  width: 85%; 
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+/* Contenedor general de paginas que uso en algunas para centrar */
+main .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+/*PIE DE PAGINA*/
+footer{
+  background-color: #816346;
+  padding: 1em;
+}
+
+
+
+
 
 /* DISENO PAGINA HOME PAGE*/
 .imagen-home {
@@ -31,6 +87,11 @@ a:active{color: rgb(89, 180, 105) !important;}
   object-fit: cover;
   width: 95%;
 }    
+
+
+.contenedor-texto {
+  position: relative;
+}
 
 .text-shadow-custom {
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
@@ -44,26 +105,36 @@ a:active{color: rgb(89, 180, 105) !important;}
 width: 90%;
 }
 
-
-/* diseño para header de la mayoria de las paginas*/
-.imagen-header{
-  width: 100%;  
-  max-height: 75vh;   
-  object-fit: cover;  
- 
+.header-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(225, 93, 93);
+  font-weight: bold; 
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  width: 100%; 
 }
 
-/*PIE DE PAGINA*/
-footer{
-  background-color: #816346;
-  padding: 1em;
-  margin-top: auto;
-
-   width: 100%;
+.header-subtext{
+position: absolute;
+top: 63%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: rgb(106, 175, 130);
+font-weight: bold; 
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+text-align: center;
+width: 100%; 
 }
 
 
 
+
+
+
+/* Estilo de pagina contacto */
 .contacto {
   width: 100%;
   padding: 1em;
@@ -76,66 +147,24 @@ footer{
 .formulario{
 margin-top: 3em;
 }
-/* Contenedor general de paginas que uso en algunas para centrar */
-.container-general{
-  width: 85%; 
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+
+
+/*DISEÑO DE PAGINA GEOGRAFIA*/
+.map-image {
+  cursor: pointer; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-main .row{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-
+/* Efecto de sombreado y agrandado al pasar el mouse */
+.map-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
-
-
-
-
-
-  .modal-video{
-    width: 100%;
-  }
-
-
-  .header-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(225, 93, 93);
-    font-weight: bold; 
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-    text-align: center;
-    width: 100%; 
-  }
-
-
-
-.header-subtext{
-  position: absolute;
-  top: 63%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: rgb(106, 175, 130);
-  font-weight: bold; 
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-  text-align: center;
-  width: 100%; 
-}
-
-
-
-
-
 
 /*DISEÑO DE PAGINA GALERIA DE FOTOS*/
 
 .container-fotos img:hover {
-  filter: brightness(0.8); /*diseño agregado para oscurecer la imagen al pasar el linkk*/
+  filter: brightness(0.8);
 }
 
 .container-fotos img {
@@ -143,7 +172,6 @@ main .row{
   height: auto; 
 
 }
-
 
 .conteiner-galeria{
   background-color: rgb(3, 3, 3);
@@ -157,6 +185,8 @@ main .row{
     justify-content: center;
     margin: 0 auto;
   }
+
+
 
 
 /*DISEÑO PAGINA GASTRONOMIA*/
@@ -190,10 +220,8 @@ main .row{
     background-color: #816346;
   }
   
-   
-
+  
     .h-gastronomia{
-
         height: 30vh; 
         object-fit: cover;  
         display: block;    
@@ -203,8 +231,32 @@ main .row{
     }
 
 
+/*DISEÑO DE PAGINA RESTAURANTES*/
+   
+.restaurant-card {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
 
+.restaurant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.restaurant-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.map-container {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}
 
 /*DISEÑO DE PAGINA COMIDAS TIPICAS*/
 /* Imagenes de la pagina comidas tipicas width */
@@ -212,7 +264,6 @@ main .row{
 width: 100%;
 
 }
-
 
 /* Titulo del header de comidas tipicas*/
 .header-container h1 {
@@ -228,20 +279,18 @@ width: 100%;
 
 /*Boton del header comidas tipicas*/
 .header-container a.btn {
-
   font-size: 0.9em; 
   padding: 4px ; 
   position: absolute; top: 70%; left: 50%; transform: translate(-50%);
 }
 
-
-
-
 .imagen-receta{
   width: 100%;
-
-  border-radius: 0; /* Asegura que no haya bordes redondeados */
+  border-radius: 0; /* sin bordes */
 }
+
+
+
 
 
 /*DISEÑO PAGINA JUEG0*/
@@ -255,10 +304,8 @@ width: 100%;
   background-color: rgb(106, 169, 123);
   padding: 2em;
   margin-bottom: 3em;
+  border-radius: 1em;
 }
-
-
-
 
   button {
     cursor: pointer;
@@ -273,8 +320,6 @@ width: 100%;
   
     }
   
-
-
     .preguntasyrespuestas{
       padding: 2em;
     }
@@ -295,7 +340,6 @@ width: 100%;
       
     .card-title{
       text-decoration: none;
-  
     }
     
     #temporizador {
@@ -316,17 +360,26 @@ width: 100%;
       border-radius: 8px; 
       border: 1px solid #ccc;
       background-color: #f8f8f8; 
-    
     }
-    
+
+    .min-height-full {
+      min-height: calc(100vh - 138px);
+    }
   
 
 
 /* DISENO DE PAGINA DESTINOS*/
 /* Diseño para oscurecer la imagen al pasar el mouse */
-.conteineralbums img:hover {
+.conteinerlugares img:hover {
   filter: brightness(0.8);
 }
+
+.modal-video{
+  width: 100%;
+}
+.modal-body{
+  background-color: rgb(238, 228, 215);
+ }
 
 /* Contenedor de cada destino */
 .destino-container {
@@ -343,17 +396,19 @@ width: 100%;
   font-size: 24px; 
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-  opacity: 0; /* Inicialmente, el texto está invisible */
-  transition: opacity 0.3s ease; /* Suaviza la transición cuando el texto aparece */
+  opacity: 0; /* texto invisible */
+  transition: opacity 0.3s ease; 
 }
 
 /* Cuando el ratón pase sobre el contenedor de la imagen, el texto se hará visible */
 .destino-container:hover .texto-sobre-imagen-destinos {
-  opacity: 1; /* Hace que el texto sea visible */
+  opacity: 1; /* texto visible */
 }
 
-/* Estilos generales para la galería de destinos */
-.conteineralbums {
+
+
+/* Estilos generales para la galería de destinos imperdibles */
+.conteinerlugares {
   width: 100%;
   text-align: center;
   margin: 0 auto;
@@ -362,11 +417,33 @@ width: 100%;
 }
 
 /* Ajusta el tamaño de la imagen */
-.conteineralbums img {
+.conteinerlugares img {
   width: 90%;
   height: auto; 
   border-radius: 1em;
   cursor: pointer;
+}
+
+
+
+
+
+/* Diseno pagina futbol */
+.destacado {
+  font-weight: bold;
+  color: #D10000;
+}
+
+
+
+/* Diseno pagina Musica*/
+.imagen-musica {
+  width: 100%;
+  transition: filter 0.3s ease; /* Transición para el filtro */
+}
+
+.imagen-musica:hover {
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5)); /* Sombreado alrededor de la imagen */
 }
 
 /* En dispositivos móviles, el texto siempre será visible */
@@ -396,15 +473,13 @@ width: 100%;
      top: 65%; left: 50%;
     }
 
-    .conteineralbums img {
+    .conteinerlugares img {
       width: 90%;
     }
 
     
     .header-subtext{
-      
       top: 58%;
-  
     }
  
 }
@@ -417,14 +492,11 @@ width: 100%;
     @media screen and (min-width: 768px) {
         .h-gastronomia{
           height: 40vh; 
-      
+    
         }
 
-
         .header-subtext{
-      
           top: 58%;
-      
         }
 
         .imagen-receta{
@@ -439,19 +511,15 @@ width: 100%;
         .imagen-header{
           max-height: 50vh;   
         }
+        
 
         
 #carouselExampleCaptions .carousel-item img { 
   max-height: 50vh;   
-  
 }
         
-    
-
-
         .imagenes-comida{
           height: 40vh; 
-  
           }
 
     .header-container h1 {
@@ -474,7 +542,7 @@ width: 100%;
 
 
 
- /* ESTILOS PPARA PAGINAS APARTIR DE 768PX(grande) */
+ /* ESTILOS PPARA PAGINAS APARTIR DE 992PX(grande) */
 @media screen and (min-width: 992px) {
  
   .logo{
@@ -486,12 +554,14 @@ width: 100%;
      }
 
   
+     .container-juego {
+      width: 50%;
+    }
 
     
+    
 #carouselExampleCaptions .carousel-item img {
- 
   max-height: 75vh;   
-  
 }
     .contacto {
       padding: 2em;
@@ -544,14 +614,27 @@ width: 100%;
 
 .imagen-receta{
   width: 80%;
-
-
 }
+
+#navbarNav {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+#navbarNav ul.navbar-nav {
+  margin: 0 auto;
+}
+
+
+
+
+
   }
 
 
 
- /* ESTILOS PPARA PAGINAS APARTIR DE 768PX(ectra grande) */
+ /* ESTILOS PARA PAGINAS APARTIR DE 1200PX(extra grande) */
   @media screen and (min-width: 1200px) {
 
   .textopurpose{
@@ -559,25 +642,37 @@ width: 100%;
    }
 
 
-
+   .container-juego {
+    width: 50%;
+  }
   
+  .imagen-musica{
+    width: 60%;
+  }
     
   .imagenes-comida{
    width: 100%;
   }
 
 
+  .header-subtext{
+    font-size: 40px;
+    }
+    
+    .header-text{
+      font-size: 50px;
+    }
+
 
   .header-container h1 {
   top: 40%;
-
   font-size: 2.5em;
   width: 100%;
    }
   
   .header-container a.btn {
   font-size: 1.3em;
-  top: 65%; 
+  top: 50%; 
    }
 
      
@@ -590,7 +685,7 @@ width: 100%;
   }
 
   
-  .conteineralbums{
+  .conteinerlugares{
     width: 60%;
   }
 

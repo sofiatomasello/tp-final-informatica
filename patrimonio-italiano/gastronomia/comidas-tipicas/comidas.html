@@ -5,88 +5,80 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comidas tipicas de Italia</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<title>Comidas típicas de Italia</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="../../../css/estilos.css">
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="../../../css/estilos.css">
 </head>
 
-<body style="background-color: rgb(113, 129, 89);">
+<body>
 
 <!-- Barra de Navegacion + Menu hamburguesa para medidas chicas-->
 
-<header class="bg-white">
-    <nav class="navbar navbar-expand-lg ">
-          <div class="container-fluid">
-         
-            <a class="nav-link" href="../../../index.html"><img class="logo" src="../../../imagenes-principales/logo-bandera.png" alt="Imagen del logo de la pagina"></a>
-     
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ">
-                  <li class="nav-item">
-                      <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../index.html">Home</a>
-                    </li>
-                <li class="nav-item">
-                  <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../gastronomia/index.html">Gastronomia</a>
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+
+      <a class="nav-link" href="../../../index.html"><img class="logo" src="../../../imagenes-principales/logo-bandera.png" alt="Logo de bandera de italia"></a>
+      
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-start"> <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../../../index.html">Home</a>
                 </li>
-  
-                <li class="nav-item">
-                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../galeria-de-fotos/index.html">Galeria de fotos</a>
-                  </li>
-  
-                <li class="nav-item">
-                  <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../geografia/index.html">Geografia</a>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../../../consejos/index.html">Consejos</a>
                 </li>
-  
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../../../galeria-de-fotos/index.html">Galería de fotos</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../../../geografia/index.html">Geografía</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../../../curiosidades/index.html">Curiosidades</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../../../juego/index.html">Juego</a>
+                </li>
+                <li class="nav-item dropdown pt-2 pt-lg-0">
+                    <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../../../destinos/lugares/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Destinos
+                    </a>
+                    <ul class="dropdown-menu text-bg-danger">
+                        <li><a class="dropdown-item text-light" href="../../../destinos/lugares/index.html">Lugares imperdibles</a></li>
+                    </ul> 
+                </li>
+                <li class="nav-item dropdown pt-2 pt-lg-0">
+                    <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../../../patrimonio-italiano/arte/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Patrimonio Italiano
+                    </a>
+                    <ul class="dropdown-menu text-bg-danger p-3">
+                        <li><a class="dropdown-item text-light" href="../../../patrimonio-italiano/cultura/index.html">Tradiciones y Aspectos Sociales</a></li>
+                        <li><a class="dropdown-item text-light" href="../../../patrimonio-italiano/arte/index.html">Arte</a></li>
+                        <li><a class="dropdown-item text-light" href="../../../patrimonio-italiano/musica/index.html">Música</a></li>
+                        <li><a class="dropdown-item text-light" href="../../../patrimonio-italiano/gastronomia/index.html">Gastronomía</a></li>
+                        <li><a class="dropdown-item text-light" href="../../../patrimonio-italiano/deporte/index.html">Deportes</a></li>
+                    </ul>
+                </li>
                 
-                <li class="nav-item">
-                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../curiosidades/index.html">Curiosidades</a>
-                  </li>
-  
-  
-                <li class="nav-item">
-                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../gastronomia/index.html">Juego</a>
-                  </li>
-  
-                  
-                <li class="nav-item">
-                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../sobre-mi/index.html">Quien soy?</a>
-                  </li>
-            
-                <li class="nav-item dropdown">
-                  <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="historia/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Destinos
-                  </a>
-                  <ul class="dropdown-menu text-bg-danger p-3">
-                      <li><a class="dropdown-item link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="historia/index.html">Lugares imperdibles</a></li>
-                    
-              </ul>
-  
-              <li class="nav-item dropdown">
-                <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="historia/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               Historia
-                </a>
-                <ul class="dropdown-menu text-bg-danger p-3">
-                    <li><a class="dropdown-item link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="historia/index.html">Cultura</a></li>
-                    <li><a class="dropdown-item  link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="historia/index.html">Arte</a></li>
-                  
             </ul>
-              <li class="nav-item dropdown">
-                  <a class=" dropdown-toggle  link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Actividades
-                  </a>
-                  <ul class="dropdown-menu text-bg-danger p-3">
-                      <li><a class="dropdown-item link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="albums/index.html">Viajas solo?</a></li>
-                    <li><a class="dropdown-item link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" data-bs-toggle="modal" data-bs-target="#modalColaboraciones" href="#">Viajas acompañado?</a></li>
-              </ul>
-            </ul>
-            </div>
-          </div>
-        </nav>
+        </div>
+    </div>
+</nav>
+
         <div class="header-container" style="position: relative; text-align: center;">
           <h1 class="text-light">
             Vive la Experiencia de la Cocina Italiana: ¡Recetas Paso a Paso!
@@ -103,31 +95,31 @@
 
 
   
-  <main>
+  <main class="color-verde">
         <div class="row ">
-            <div class="col-lg-10 col-xl-9 mt-2" style="background-color: beige;">
+            <div class="col-lg-7 mt-2 p-md-4 p-lg-5 color-beige">
                 <h2 class="mt-5 p-2">Gastronomía Italiana: Sabores que Encantan al Mundo</h2>
-                <p class="text-justify p-2 ">Italia es famosa por su gastronomía, una de las más apreciadas a nivel mundial. Sus platos, elaborados con ingredientes frescos y recetas tradicionales, varían según la región. A continuación, te presentamos algunas de las comidas más representativas:</p>
+                <p class="text-justify-css p-2 ">Italia es famosa por su gastronomía, una de las más apreciadas a nivel mundial. Sus platos, elaborados con ingredientes frescos y recetas tradicionales, varían según la región. A continuación, te presentamos algunas de las comidas más representativas:</p>
          
-                <section>
+                <section class="text-justify-css ">
                     <h2 class="mt-5 p-2">Pizza</h2>
-                    <img class="imagenes-comida mt-2" src="../../gastronomia/comidas-tipicas/imagenes/39.jpg" alt="Pizza Margherita con tomate, mozzarella y albahaca">
+                    <img class="imagenes-comida mt-2 rounded" src="../../gastronomia/comidas-tipicas/imagenes/pizza.jpg" alt="Pizza Margherita con tomate, mozzarella y albahaca">
                     <p class="mt-3 p-2 ">Originaria de Nápoles, la pizza es uno de los símbolos más emblemáticos de Italia. La versión más tradicional es la Pizza Margherita, hecha con tomate, mozzarella, albahaca y aceite de oliva, representando los colores de la bandera italiana.</p>
 
                     <h3 class="p-2">Risotto</h3>
-                    <img class="imagenes-comida" src="../../gastronomia/comidas-tipicas/imagenes/43.jpg" alt="Risotto alla Milanese con arroz cremoso y azafrán">
+                    <img class="imagenes-comida rounded" src="../../gastronomia/comidas-tipicas/imagenes/risotto.jpg" alt="Risotto alla Milanese con arroz cremoso y azafrán">
                     <p class="mt-3 p-2 ">Especialmente popular en el norte de Italia, el risotto es un arroz cremoso cocido lentamente con caldo. Destaca el Risotto alla Milanese, que incorpora azafrán para darle su característico color dorado.</p>
 
                     <h3 class="p-2">Parmigiana di Melanzane</h3>
-                    <img class="imagenes-comida" src="../../gastronomia/comidas-tipicas/imagenes/44.jpg" alt="Parmigiana di Melanzane con berenjenas fritas y queso">
+                    <img class="imagenes-comida rounded" src="../../gastronomia/comidas-tipicas/imagenes/lasagnaberenjena.jpg" alt="Parmigiana di Melanzane con berenjenas fritas y queso">
                     <p class="mt-3 p-2">Un plato del sur de Italia a base de berenjenas fritas, salsa de tomate, queso parmesano y mozzarella, horneado hasta obtener una textura gratinada.</p>
 
                     <h3 class="p-2">Ossobuco alla Milanese</h3>
-                    <img class="imagenes-comida" src="../../gastronomia/comidas-tipicas/imagenes/45.jpg" alt="Ossobuco alla Milanese con carne de ternera y gremolata">
+                    <img class="imagenes-comida rounded" src="../../gastronomia/comidas-tipicas/imagenes/ossobuco.jpg" alt="Ossobuco alla Milanese con carne de ternera y gremolata">
                     <p class="mt-3 p-2">Un guiso de carne de ternera con médula ósea, cocinado con vino blanco, caldo y verduras, servido con gremolata (mezcla de ajo, perejil y limón).</p>
 
                     <h3 class="p-2">Frittura di Mare</h3>
-                    <img class="imagenes-comida" src="../../gastronomia/comidas-tipicas/imagenes/46.jpg" alt="Frittura di Mare con calamares, gambas y anchoas fritas">
+                    <img class="imagenes-comida rounded" src="../../gastronomia/comidas-tipicas/imagenes/mariscos.jpg" alt="Frittura di Mare con calamares, gambas y anchoas fritas">
                     <p class="mt-3 p-2">Un plato costero que consiste en mariscos y pescados fritos, como calamares, gambas y anchoas, servidos con limón.</p>
                 </section>
 
@@ -136,15 +128,15 @@
                     <p class="p-2" >Italia cuenta con más de 300 tipos de pasta. Algunos de los platos más populares incluyen:</p>
 
                     <h3 class="p-2">Spaghetti alla Carbonara (Roma)</h3>
-                    <img class="imagenes-comida mt-2" src="../../gastronomia/comidas-tipicas/imagenes/40.jpg" alt="Spaghetti alla Carbonara con huevo, panceta y queso pecorino">
+                    <img class="imagenes-comida mt-2 rounded" src="../../gastronomia/comidas-tipicas/imagenes/carbonara.jpg" alt="Spaghetti alla Carbonara con huevo, panceta y queso pecorino">
                     <p class="mt-3 p-2">Preparado con huevo, queso pecorino, panceta y pimienta negra.</p>
 
                     <h3 class="p-2">Lasagna alla Bolognese (Bolonia)</h3>
-                    <img class="imagenes-comida mt-2" src="../../gastronomia/comidas-tipicas/imagenes/41.jpg" alt="Lasagna alla Bolognese con ragú de carne y bechamel">
+                    <img class="imagenes-comida mt-2 rounded" src="../../gastronomia/comidas-tipicas/imagenes/lasagna.jpg" alt="Lasagna alla Bolognese con ragú de carne y bechamel">
                     <p class="mt-3 p-2">Son capas de pasta intercaladas con ragú de carne, bechamel y queso parmesano.</p>
 
                     <h3 class="p-2">Pasta al Pesto (Génova)</h3>
-                    <img class="imagenes-comida mt-2" src="../../gastronomia/comidas-tipicas/imagenes/42.jpg" alt="Pasta al Pesto con albahaca, piñones y queso parmesano">
+                    <img class="imagenes-comida mt-2 rounded" src="../../gastronomia/comidas-tipicas/imagenes/fideospesto.jpg" alt="Pasta al Pesto con albahaca, piñones y queso parmesano">
                     <p class="mt-3 p-2">Pasta elaborada con albahaca, ajo, piñones, queso parmesano y aceite de oliva.</p>
                 </section>
 
@@ -152,19 +144,19 @@
                     <h2 class="mt-5 p-2">Postres Italianos que No Puedes Perderte</h2>
 
                     <h3 class="p-2">Tiramisú</h3>
-                    <img class="imagenes-comida" src="../../gastronomia/comidas-tipicas/imagenes/50.jpg" alt="Tiramisú con capas de bizcocho y mascarpone">
+                    <img class="imagenes-comida rounded" src="../../gastronomia/comidas-tipicas/imagenes/tiramisu.jpg" alt="Tiramisú con capas de bizcocho y mascarpone">
                     <p class="mt-3 p-2">Postre cremoso de capas de bizcocho empapado en café, mascarpone, cacao y licor.</p>
 
                     <h3 class="p-2">Cannoli</h3>
-                    <img class="imagenes-comida" src="../../gastronomia/comidas-tipicas/imagenes/47.jpg" alt="Cannoli siciliano con ricotta y trozos de chocolate">
+                    <img class="imagenes-comida rounded" src="../../gastronomia/comidas-tipicas/imagenes/cannoli.jpg" alt="Cannoli siciliano con ricotta y trozos de chocolate">
                     <p class="mt-3 p-2">Un postre siciliano hecho con una masa frita en forma de tubo, rellena de ricotta dulce y trozos de chocolate.</p>
 
                     <h3 class="p-2">Panna Cotta</h3>
-                    <img class="imagenes-comida" src="../../gastronomia/comidas-tipicas/imagenes/49.jpg" alt="Panna Cotta con caramelo y frutos rojos">
+                    <img class="imagenes-comida rounded" src="../../gastronomia/comidas-tipicas/imagenes/pannacotta.jpg" alt="Panna Cotta con caramelo y frutos rojos">
                     <p class="mt-3 p-2">Flan suave acompañado de caramelo, frutos rojos o chocolate.</p>
 
                     <h3 class="p-2">Gelato</h3>
-                    <img class="imagenes-comida" src="../../gastronomia/comidas-tipicas/imagenes/48.jpg" alt="Gelato italiano con sabores intensos">
+                    <img class="imagenes-comida rounded" src="../../gastronomia/comidas-tipicas/imagenes/gelato.jpg" alt="Gelato italiano con sabores intensos">
                     <p class="mt-3 p-2 mb-5">El famoso helado italiano, cremoso y con sabores intensos.</p>
                 </section>
   </div>
@@ -172,22 +164,25 @@
 </main>
 
 
- <!--Pie de pagina -->
- <div class="container-fluid p-0">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center ">
-    <div class="col-md-4 d-flex align-items-center">
-      <a class="mb-3 mb-md-0 pe-2 text-white" href="../formulario/index.html">Contacto</a>
-      <a class="mb-3 mb-md-0 text-white" href="../sobre-mi/index.html">Conóceme</a>
+    <!--Pie de pagina -->
+    <div class="p-0">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center">
+        <div class="col-md-4 text-white">
+        <a class="mb-3 mb-md-0 pe-2" href="../../../formulario/index.html">Contacto</a>
+        <a class="mb-3 mb-md-0" href="../../../sobre-mi/index.html">Sobre mi</a>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-white" href="https://x.com/sofitomasello" target="_blank"><i class="bi bi-twitter" style="font-size: 24px;"></i></a></li>
+            <li class="ms-3"><a class="text-white" href="https://www.instagram.com/sofitomasello/?next=%2F" target="_blank"><i class="bi bi-instagram" style="font-size: 24px;"></i></a></li>
+            <li class="ms-3"><a class="text-white" href="https://www.facebook.com/sofi.tomasello" target="_blank"><i class="bi bi-facebook" style="font-size: 24px;"></i></a></li>
+        </ul>
+      </footer>
     </div>
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-twitter" style="font-size: 24px;"></i></a></li>
-      <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-instagram" style="font-size: 24px;"></i></a></li>
-      <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-facebook" style="font-size: 24px;"></i></a></li>
-    </ul>
-  </footer>
-</div>
-        
-    </body>
+     
+<!-- Bootstrap  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+   
+</body>
 </html>
 
 

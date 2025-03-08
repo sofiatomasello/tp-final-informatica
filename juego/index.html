@@ -5,99 +5,105 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Trivia sobre Italia</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-
-<link rel="stylesheet" href="../css/estilos.css">
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
-<body>
-   
 
-<!-- Barra de Navegacion + Menu hamburguesa para medidas chicas-->
-<header>
+
+<!-- Para la creación de esta página, quise recrear una especie de trivia sobre Italia, utilizando sonidos para mejorar la experiencia. -->
+ 
+<body class="color-verde">
+<header class="bg-white">
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="nav-link" href="../index.html"><img class="logo" src="../imagenes-principales/logo-bandera.png" alt="Logo de la página Bella Italia"></a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <a class="nav-link" href="../index.html"><img class="logo" src="../imagenes-principales/logo-bandera.png" alt="Logo de bandera de italia"></a>
+      
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item pt-2 pt-lg-0">
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item pt-2 pt-lg-0">
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../gastronomia/index.html">Gastronomía</a>
-          </li>
-          <li class="nav-item pt-2 pt-lg-0">
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../galeria-de-fotos/index.html">Galería de fotos</a>
-          </li>
-          <li class="nav-item pt-2 pt-lg-0">
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../geografia/index.html">Geografía</a>
-          </li>
-          <li class="nav-item pt-2 pt-lg-0">
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../curiosidades/">Curiosidades</a>
-          </li>
-          <li class="nav-item pt-2 pt-lg-0">
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../juego/index.html">Juego</a>
-          </li>
-          <li class="nav-item dropdown pt-2 pt-lg-0">
-            <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../historia/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Destinos
-            </a>
-            <ul class="dropdown-menu text-bg-danger">
-              <li><a class="dropdown-item text-light" href="../destinos/lugares/index.html">Lugares imperdibles</a></li>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-start"> <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../consejos/index.html">Consejos</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../galeria-de-fotos/index.html">Galería de fotos</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../geografia/index.html">Geografía</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../curiosidades/index.html">Curiosidades</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../juego/index.html">Juego</a>
+                </li>
+                <li class="nav-item dropdown pt-2 pt-lg-0">
+                    <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../destinos/lugares/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Destinos
+                    </a>
+                    <ul class="dropdown-menu text-bg-danger">
+                        <li><a class="dropdown-item text-light" href="../destinos/lugares/index.html">Lugares imperdibles</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown pt-2 pt-lg-0">
+                    <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../patrimonio-italiano/gastronomia/bebidas/bebidas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Patrimonio Italiano
+                    </a>
+                    <ul class="dropdown-menu text-bg-danger p-3">
+                      <li><a class="dropdown-item text-light" href="../patrimonio-italiano/cultura/index.html">Tradiciones y Aspectos Sociales</a></li>
+                      <li><a class="dropdown-item text-light" href="../patrimonio-italiano/arte/index.html">Arte</a></li>
+                      <li><a class="dropdown-item text-light" href="../patrimonio-italiano/musica/index.html">Música</a></li>
+                      <li><a class="dropdown-item text-light" href="../patrimonio-italiano/gastronomia/index.html">Gastronomía</a></li>
+                      <li><a class="dropdown-item text-light" href="../patrimonio-italiano/deporte/index.html">Deportes</a></li>
+                    </ul>
+                </li>
             </ul>
-          </li>
-          <li class="nav-item dropdown pt-2 pt-lg-0">
-            <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../historia/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Historia
-            </a>
-            <ul class="dropdown-menu text-bg-danger p-3">
-              <li><a class="dropdown-item text-light" href="../historia/index.html">Cultura</a></li>
-              <li><a class="dropdown-item text-light" href="../historia/arte/index.html">Arte</a></li>
-              <li><a class="dropdown-item text-light" href="../gastronomia/index.html">Música</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown pt-2 pt-lg-0">
-            <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Actividades
-            </a>
-            <ul class="dropdown-menu text-bg-danger p-3">
-              <li><a class="dropdown-item text-light" href="../albums/index.html">¿Viajas solo?</a></li>
-              <li><a class="dropdown-item text-light" data-bs-toggle="modal" data-bs-target="#modalColaboraciones" href="#">¿Viajas acompañado?</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+        </div>
     </div>
-  </nav>
+</nav>
+ 
 </header>
 
 
 
 
-
-<main class="container-lg mx-auto" style="background-color: black;">
+  <!--Contenedor-->
+<main class="container-lg color-beige min-height-full">
 
 
   <section class="p-3 " >
-    <h2 class="text-center pt-5 text-light  p-2">¡Bienvenidos a nuestro juego de trivia sobre Italia!</h1>
-<h3 class="text-center m-4 text-light  p-2"> Prepárense para poner a prueba sus conocimientos sobre este hermoso país con 15 preguntas desafiantes. Tendrán 10 segundos para responder cada pregunta, ¡así que piensen rápido!</h3>
+    <h2 class="text-center pt-5 p-2">¡Bienvenidos a nuestro juego de trivia sobre Italia!</h2>
+<h4 class="text-center m-4 p-2"> Prepárense para poner a prueba sus conocimientos sobre este hermoso país con 15 preguntas desafiantes. Tendrán 15 segundos para responder cada pregunta, ¡así que piensen rápido!</h4>
 
+      <!-- Botón para comenzar el juego -->
     <button id="botonJugar" class="mt-5"  onclick="comenzarJuego()">Jugar</button>
     <div id="contenedorJuego" class="container-juego pb-4">
-        <div id="temporizador">10</div>
+        <div id="temporizador">15</div>  <!-- Temporizador del juego -->
         <div class="preguntasyrespuestas">
           <div class="preguntaHtml" id="preguntaHtml"></div>
           <div class="opcionesHtml" id="opcionesHtml"></div>
         </div>
+          <!-- Área para mostrar resultados -->
         <div class="resultadosHtml" id="resultadosHtml"></div>
+             <!-- Botón para reiniciar el juego (invisible hasta el final) -->
         <button id="reinicioHtml" style="display:none;">Reiniciar</button>
         
       </div>
@@ -105,19 +111,23 @@
     </main>
 
 
-    <!-- PIE DE PAGINA -->
-<div class="container-fluid p-0">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+  <!--Pie de pagina -->
+  <div class="p-0 ">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center">
+      <div class="col-md-4 text-white">
+        <a class="mb-3 mb-md-0 pe-2" href="../formulario/index.html">Contacto</a>
+        <a class="mb-3 mb-md-0" href="../sobre-mi/index.html">Sobre mi</a>
       </div>
       <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter" style="font-size: 24px;"></i></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram" style="font-size: 24px;"></i></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook" style="font-size: 24px;"></i></a></li>
+        <li class="ms-3"><a class="text-white" href="https://x.com/sofitomasello" target="_blank"><i class="bi bi-twitter" style="font-size: 24px;"></i></a></li>
+        <li class="ms-3"><a class="text-white" href="https://www.instagram.com/sofitomasello/?next=%2F" target="_blank"><i class="bi bi-instagram" style="font-size: 24px;"></i></a></li>
+        <li class="ms-3"><a class="text-white" href="https://www.facebook.com/sofi.tomasello" target="_blank"><i class="bi bi-facebook" style="font-size: 24px;"></i></a></li>
       </ul>
     </footer>
   </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <script src="../js/juego.js"></script>
 </body>

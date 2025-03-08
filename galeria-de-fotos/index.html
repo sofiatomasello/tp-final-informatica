@@ -4,92 +4,98 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Galeria de fotos</title>
+<title>Galeria de fotos de Italia</title>
+
+  <!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+  <!-- Bootstrap Icons -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+
+  <!--Glightbox link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+
+<!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+ <!-- Estilos CSS -->
 <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
 
- 
+     
+
+<!--Para la realizacion de esta pagina uso la libreria glightbox-->
     
 
 <!-- Barra de Navegacion + Menu hamburguesa para medidas chicas-->
 <header>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="nav-link" href="../index.html"><img class="logo" src="../imagenes-principales/logo-bandera.png" alt="Logo de la página Bella Italia"></a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <a class="nav-link" href="../index.html"><img class="logo" src="../imagenes-principales/logo-bandera.png" alt="Logo de bandera de italia"></a>
+      
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item pt-2 pt-lg-0">
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item pt-2 pt-lg-0">
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../gastronomia/index.html">Gastronomía</a>
-          </li>
-          <li class="nav-item pt-2 pt-lg-0">
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../galeria-de-fotos/index.html">Galería de fotos</a>
-          </li>
-          <li class="nav-item pt-2 pt-lg-0">
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../geografia/index.html">Geografía</a>
-          </li>
-          <li class="nav-item pt-2 pt-lg-0">
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../curiosidades/">Curiosidades</a>
-          </li>
-          <li class="nav-item pt-2 pt-lg-0">
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../juego/index.html">Juego</a>
-          </li>
-          <li class="nav-item dropdown pt-2 pt-lg-0">
-            <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../historia/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Destinos
-            </a>
-            <ul class="dropdown-menu text-bg-danger">
-              <li><a class="dropdown-item text-light" href="../destinos/lugares/index.html">Lugares imperdibles</a></li>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-start"> <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../consejos/index.html">Consejos</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../galeria-de-fotos/index.html">Galería de fotos</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../geografia/index.html">Geografía</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../curiosidades/index.html">Curiosidades</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../juego/index.html">Juego</a>
+                </li>
+                <li class="nav-item dropdown pt-2 pt-lg-0">
+                    <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../destinos/lugares/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Destinos
+                    </a>
+                    <ul class="dropdown-menu text-bg-danger">
+                        <li><a class="dropdown-item text-light" href="../destinos/lugares/index.html">Lugares imperdibles</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown pt-2 pt-lg-0">
+                    <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../patrimonio-italiano/gastronomia/bebidas/bebidas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Patrimonio Italiano
+                    </a>
+                    <ul class="dropdown-menu text-bg-danger p-3">
+                      <li><a class="dropdown-item text-light" href="../patrimonio-italiano/cultura/index.html">Tradiciones y Aspectos Sociales</a></li>
+                      <li><a class="dropdown-item text-light" href="../patrimonio-italiano/arte/index.html">Arte</a></li>
+                      <li><a class="dropdown-item text-light" href="../patrimonio-italiano/musica/index.html">Música</a></li>
+                      <li><a class="dropdown-item text-light" href="../patrimonio-italiano/gastronomia/index.html">Gastronomía</a></li>
+                      <li><a class="dropdown-item text-light" href="../patrimonio-italiano/deporte/index.html">Deportes</a></li>
+                    </ul>
+                </li>
             </ul>
-          </li>
-          <li class="nav-item dropdown pt-2 pt-lg-0">
-            <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../historia/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Historia
-            </a>
-            <ul class="dropdown-menu text-bg-danger p-3">
-              <li><a class="dropdown-item text-light" href="../historia/index.html">Cultura</a></li>
-              <li><a class="dropdown-item text-light" href="../historia/arte/index.html">Arte</a></li>
-              <li><a class="dropdown-item text-light" href="../gastronomia/index.html">Música</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown pt-2 pt-lg-0">
-            <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Actividades
-            </a>
-            <ul class="dropdown-menu text-bg-danger p-3">
-              <li><a class="dropdown-item text-light" href="../albums/index.html">¿Viajas solo?</a></li>
-              <li><a class="dropdown-item text-light" data-bs-toggle="modal" data-bs-target="#modalColaboraciones" href="#">¿Viajas acompañado?</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+        </div>
     </div>
-  </nav>
+</nav>
 </header>
 
 
  
   
+<!--Contenedor-->
   <main class="container-fotos">
 
-    <h2 class="text-center mt-5 mb-5">
-    Bienvenidos a nuestra galería de fotos, un espacio diseñado para que descubras y disfrutes la impresionante belleza de los paisajes de Italia.</h2>
+    <h3 class="text-center mt-5 mb-5 p-3">
+    Bienvenidos a nuestra galería de fotos, un espacio diseñado para que descubras y disfrutes la impresionante belleza de los paisajes de Italia.</h3>
 
     <div class="row">
         <div class="col-md-4 col-sm-6 mb-4">
@@ -142,7 +148,7 @@
 </div>
 <div class="col-md-4 col-sm-6 mb-4 ">
   <a href="../galeria-de-fotos/imagenes/galeria/10.jpg" class="glightbox" data-gallery="gallery1" data-glightbox="title:Venecia, Italia.;">
-      <img class="rounded" src="../galeria-de-fotos/imagenes/galeria/10.jpg" class="img-fluid shadow" alt="Imagen de Venecia.">
+      <img class="rounded img-fluid shadow" src="../galeria-de-fotos/imagenes/galeria/10.jpg" alt="Imagen de Venecia.">
   </a>
 </div>
 
@@ -300,35 +306,29 @@
 </div>
 
  </div>
-
 </main>
 
-<!-- PIE DE PAGINA -->
-<div class="container-fluid p-0 mt-5">
-  <footer class="d-flex flex-wrap justify-content-between align-items-centerborder-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+
+
+  <!--Pie de pagina -->
+  <div class="p-0 mt-5">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center">
+      <div class="col-md-4 text-white">
+      <a class="mb-3 mb-md-0 pe-2" href="../formulario/index.html">Contacto</a>
+      <a class="mb-3 mb-md-0" href="../sobre-mi/index.html">Sobre mi</a>
       </div>
       <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter" style="font-size: 24px;"></i></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram" style="font-size: 24px;"></i></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook" style="font-size: 24px;"></i></a></li>
+        <li class="ms-3"><a class="text-white" href="https://x.com/sofitomasello" target="_blank"><i class="bi bi-twitter" style="font-size: 24px;"></i></a></li>
+        <li class="ms-3"><a class="text-white" href="https://www.instagram.com/sofitomasello/?next=%2F" target="_blank"><i class="bi bi-instagram" style="font-size: 24px;"></i></a></li>
+        <li class="ms-3"><a class="text-white" href="https://www.facebook.com/sofi.tomasello" target="_blank"><i class="bi bi-facebook" style="font-size: 24px;"></i></a></li>
       </ul>
     </footer>
   </div>
-    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   
-  <script>
-  const lightbox = GLightbox({
-    selector: '.glightbox',
-    touchNavigation: true,
-    loop: true,
-    width: 800, 
-    height: 600,
-});
-</script>
-
-
+  
+<!-- Link de glightbox y de boostrap y de js-->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/galeria-fotos.js"></script>
 </body>
-  </html>
+</html>

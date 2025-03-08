@@ -4,157 +4,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lugares imperdibles</title>
+  <title>Lugares imperdibles de Italia</title>
+  
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../css/estilos.css">
+  
+    <!--Google fonts-->
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  
 
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="../../css/estilos.css">
 </head>
 
-
+<!-- Para la realizacion de esta pagina uso modales de boostrap y efectos visuales con css y ademas js para parar el video cuando salga del modal-->
 <body>
 <!-- Barra de Navegacion + Menu hamburguesa para medidas chicas-->
 
 <header>
-  <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid ">
-       
-          <a class="nav-link" href="index.html"><img class="logo" src="../../imagenes-principales/logo-bandera.png" alt="Imagen del logo de la pagina"></a>
-   
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ">
-                <li class="nav-item">
-                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../index.html">Home</a>
-                  </li>
-              <li class="nav-item">
-                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../gastronomia/index.html">Gastronomia</a>
-              </li>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
 
-              <li class="nav-item">
-                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../galeria-de-fotos/index.html">Galeria de fotos</a>
-              </li>
-
-             
-
-              <li class="nav-item">
-                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../geografia/index.html">Geografia</a>
-              </li>
-
-              
-              <li class="nav-item">
-                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../gastronomia/index.html">Curiosidades</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="./gastronomia/index.html">Musica</a>
-              </li>
-
-
-              
-              <li class="nav-item">
-                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../gastronomia/index.html">Juego</a>
-              </li>
-
-              
-              <li class="nav-item dropdown">
-                <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../historia/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               Destinos
-                </a>
-                <ul class="dropdown-menu text-bg-danger p-3">
-                    <li><a class="dropdown-item text-light" href="../destinos/index.html">Lugares imperdibles</a></li>
-                  
-            </ul>
-
-            <li class="nav-item dropdown">
-              <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../historia/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             Historia
-              </a>
-              <ul class="dropdown-menu text-bg-danger p-3">
-                  <li><a class="dropdown-item text-light" href="../historia/index.html">Cultura</a></li>
-                  <li class="nav-item">
-                    <a class="nav-link text-dark" href="../gastronomia/index.html">Arte</a>
-                  </li>
-          </ul>
-            <li class="nav-item dropdown">
-                <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2 " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               Actividades
-                </a>
-                <ul class="dropdown-menu text-bg-danger p-3">
-                    <li><a class="dropdown-item text-light" href="../lbums/index.html">Viajas solo?</a></li>
-                  <li><a class="dropdown-item text-light" data-bs-toggle="modal" data-bs-target="#modalColaboraciones" href="#">Viajas acompañado?</a></li>
-            </ul>
-          </ul>
-          </div>
-        </div>
-      </nav> 
-
+      <a class="nav-link" href="../../index.html"><img class="logo" src="../../imagenes-principales/logo-bandera.png" alt="Logo de bandera de italia"></a>
       
-      <img src="../lugares/imagenes/costa-amalfitana/vista-general.jpg" alt="" class="imagen-header  mx-auto d-block p-0">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-start"> <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../../index.html">Home</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../../consejos/index.html">Consejos</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../../galeria-de-fotos/index.html">Galería de fotos</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../../geografia/index.html">Geografía</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../../curiosidades/index.html">Curiosidades</a>
+                </li>
+                <li class="nav-item pt-2 pt-lg-0">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../../juego/index.html">Juego</a>
+                </li>
+                <li class="nav-item dropdown pt-2 pt-lg-0">
+                    <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../../destinos/lugares/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Destinos
+                    </a>
+                    <ul class="dropdown-menu text-bg-danger">
+                        <li><a class="dropdown-item text-light" href="../../destinos/lugares/index.html">Lugares imperdibles</a></li>
+                    </ul> 
+                </li>
+                <li class="nav-item dropdown pt-2 pt-lg-0">
+                    <a class="dropdown-toggle link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover p-2" href="../../patrimonio-italiano/arte/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Patrimonio Italiano
+                    </a>
+                    <ul class="dropdown-menu text-bg-danger p-3">
+                        <li><a class="dropdown-item text-light" href="../../patrimonio-italiano/cultura/index.html">Tradiciones y Aspectos Sociales</a></li>
+                        <li><a class="dropdown-item text-light" href="../../patrimonio-italiano/arte/index.html">Arte</a></li>
+                        <li><a class="dropdown-item text-light" href="../../patrimonio-italiano/musica/index.html">Música</a></li>
+                        <li><a class="dropdown-item text-light" href="../../patrimonio-italiano/gastronomia/index.html">Gastronomía</a></li>
+                        <li><a class="dropdown-item text-light" href="../../patrimonio-italiano/deporte/index.html">Deportes</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+      
+<!-- Encabezado-->
+      <img src="imagenes/header.jpg" alt="" class="imagen-header  mx-auto d-block p-0">
 </header>
 
 
-
+<!-- Contenedor-->
 <main>
-<article class="conteineralbums">
+<article class="conteinerlugares">
 
 <h2 class="text-dark mb-5">¡Italia Esencial: 10 Lugares Mágicos que Debes Explorar!</h2>
     
 <div class="row">
 
 <div class="col-lg-6 col-md-6 col-sm-6 destino-container">
-<img class="imagen-enlace" src="../lugares/imagenes/roma/coliseo.jpg" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#staticBackdrop1" alt="Imagen de album Believe">
+<img class="imagen-enlace modal-trigger" src="../lugares/imagenes/roma/coliseo.jpg" data-bs-toggle="modal" data-bs-target="#staticBackdrop1" alt="Imagen del Coliseo, Roma.">
 <h4 class="texto-sobre-imagen-destinos">Roma</h4>
 </div>
 
   
 <div class="col-lg-6 col-md-6 col-sm-6 destino-container">
-<img class="imagen-enlace" src="../lugares/imagenes/milan/duomo-milan.jpg" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"  alt="Imagen de album Believe">
+<img class="imagen-enlace modal-trigger" src="../lugares/imagenes/milan/duomo-milan.jpg" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"  alt="Imagen del Duomo de Milan.">
 <h4 class="texto-sobre-imagen-destinos">Milan</h4>
 </div>
 
 <div class="col-lg-6 col-md-6 col-sm-6 destino-container">
-<img class="imagen-enlace" src="../lugares/imagenes/napoles/vista-general-napoles.jpg" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"  alt="Imagen de album Purpose">
+<img class="imagen-enlace modal-trigger" src="../lugares/imagenes/napoles/vista-general-napoles.jpg" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"  alt="Imagen general de la vista de Napoles">
 <h4 class="texto-sobre-imagen-destinos">Napoles</h4>
 </div>
 
 <div class="col-lg-6 col-md-6 col-sm-6 destino-container">
-<img class="imagen-enlace" src="../lugares/imagenes/venecia/canales-noche.jpg" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#staticBackdrop4"  alt="Imagen de album Believe">
+<img class="imagen-enlace modal-trigger" src="../lugares/imagenes/venecia/canales-noche.jpg" data-bs-toggle="modal" data-bs-target="#staticBackdrop4"  alt="Imagen de los canales de Venecia">
 <h4 class="texto-sobre-imagen-destinos">Venecia</h4>
 </div>
 
 <div class="col-lg-6 col-md-6 col-sm-6 destino-container">
-<img class="imagen-enlace" src="../lugares/imagenes/florencia/catedral.jpg" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#staticBackdrop5" alt="Imagen de album Changes">
+<img class="imagen-enlace modal-trigger" src="../lugares/imagenes/florencia/catedral.jpg"  data-bs-toggle="modal" data-bs-target="#staticBackdrop5" alt="Imagen  de la catedral de Florencia.">
 <h4 class="texto-sobre-imagen-destinos">Florencia</h4>
 </div>
 
 <div class="col-lg-6 col-md-6 col-sm-6 destino-container">
-<img class="imagen-enlace" src="../lugares/imagenes/costa-amalfitana/vista-general.jpg" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#staticBackdrop6"  alt="Imagen de album Believe">
+<img class="imagen-enlace modal-trigger" src="../lugares/imagenes/costa-amalfitana/vista-general.jpg" data-bs-toggle="modal" data-bs-target="#staticBackdrop6"  alt="Imagen de la Costa Amalfitana.">
 <h4 class="texto-sobre-imagen-destinos">Costa amalfitana</h4>
 </div>
 
 <div class="col-lg-6 col-md-6 col-sm-6 destino-container">
-<img class="imagen-enlace" src="../lugares/imagenes/cinque-terre/vista-general.jpg" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#staticBackdrop7"  alt="Imagen de album Believe">
+<img class="imagen-enlace modal-trigger" src="../lugares/imagenes/cinque-terre/vista-general.jpg" data-bs-toggle="modal" data-bs-target="#staticBackdrop7"  alt="Imagen del paisaje Cinque Terre.">
 <h4 class="texto-sobre-imagen-destinos">Cinque terre</h4>
 </div>
 
 <div class="col-lg-6 col-md-6 col-sm-6 destino-container">
-<img class="imagen-enlace" src="../lugares/imagenes/verona/arena-de-verona.jpg" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#staticBackdrop8"  alt="Imagen de album Believe">
+<img class="imagen-enlace modal-trigger" src="../lugares/imagenes/verona/arena-de-verona.jpg"  data-bs-toggle="modal" data-bs-target="#staticBackdrop8"  alt="Imagen de Arena de Verona">
 <h4 class="texto-sobre-imagen-destinos">Verona</h4>
 </div>
 
 <div class="col-lg-6 col-md-6 col-sm-6 destino-container">
-<img class="imagen-enlace" src="../lugares/imagenes/sicilia/vista-general.jpg" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#staticBackdrop9"  alt="Imagen de album Believe">
+<img class="imagen-enlace modal-trigger" src="../lugares/imagenes/sicilia/vista-general.jpg"  data-bs-toggle="modal" data-bs-target="#staticBackdrop9"  alt="Imagen de Sicilia, paisaje.">
 <h4 class="texto-sobre-imagen-destinos">Sicilia</h4>
 </div>
 
 <div class="col-lg-6 col-md-6 col-sm-6 destino-container">
-<img class="imagen-enlace" src="../lugares/imagenes/bolonia/vista-de-ciudad.jpg" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#staticBackdrop10"  alt="Imagen de album Believe">
+<img class="imagen-enlace modal-trigger" src="../lugares/imagenes/bolonia/vista-de-ciudad.jpg"  data-bs-toggle="modal" data-bs-target="#staticBackdrop10"  alt="Imagen de las casas de Bolonia.">
 <h4 class="texto-sobre-imagen-destinos">Bolonia</h4>
 </div>
 
@@ -162,96 +150,105 @@
 </article>
 
 
-  
-<!-- Modal Roma-->
-<div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"   
-aria-hidden="true">
-<div class="modal-dialog modal-xl">
-<div class="modal-content">
-<div class="modal-header" >
-<h1 class="modal-title fs-7 text-danger ps-3" id="staticBackdropLabel">Roma</h1>
-<button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
-</div>
-
-<div class="modal-body">
-<div class="row">
-<div class="col-lg-6">
-<img class="w-100" src="imagenes/roma/fontana-de-trevi.jpg" alt="" >
-</div>
-<div class="col-lg-6 mt-5">
-<p>Roma, la "Ciudad Eterna", es la capital de Italia y una de las ciudades más antiguas y fascinantes del mundo. Su rica historia, impresionante arquitectura y vibrante cultura atraen a millones de visitantes cada año.</p>
-</div> 
-   
-    <section class="p-3 mt-3 ">
-      <h5 class="p-2">Aquí tienes algunas de sus atracciones más destacadas:</h5>
-      <ul>
-      <li><strong>Coliseo Romano:</strong> El anfiteatro más grande jamás construido, un símbolo icónico de la antigua Roma.</li>
-      <li class="pt-1"><strong>Foro Romano:</strong> El corazón de la antigua Roma, un complejo de ruinas que incluyen templos, basílicas y arcos triunfales.</li>
-      <li class="pt-1"><strong>Panteón de Agripa:</strong> Un templo romano notablemente bien conservado, famoso por su cúpula con un óculo central.</li>
-      <li class="pt-1"><strong>Ciudad del Vaticano:</strong> Un estado independiente dentro de Roma, hogar de la Basílica de San Pedro, los Museos Vaticanos y la Capilla Sixtina.</li>
-      <li class="pt-1"><strong>Fontana di Trevi:</strong> Una fuente barroca espectacular, famosa por la tradición de lanzar monedas para asegurar un regreso a Roma.</li>
-      <li class="pt-1"><strong>Fontana di Trevi:</strong> Una fuente barroca espectacular, famosa por la tradición de lanzar monedas para asegurar un regreso a Roma.</li>
-      <li class="pt-1"><strong>Plaza Navona:</strong> Una hermosa plaza barroca con tres fuentes impresionantes, incluyendo la Fuente de los Cuatro Ríos de Bernini.</li>
-      <li class="pt-1"><strong>Escalinata de la Plaza de España:</strong> Una escalinata monumental que conecta la Plaza de España con la iglesia de Trinità dei Monti.</li>
-      <li class="pt-1"><strong>Galería Borghese:</strong> Un museo de arte ubicado en la Villa Borghese, que alberga obras maestras de Bernini, Caravaggio y Rafael.</li>
-      <li class="pt-1"><strong>Trastevere:</strong> Un barrio bohemio con calles empedradas, restaurantes tradicionales y vida nocturna animada.</li>
-      <li class="pt-1"><strong>Catacumbas de Roma:</strong> Túneles subterráneos utilizados como cementerios cristianos en la época romana temprana.</li>
-      <li class="pt-1"><strong>Mercado de Campo de' Fiori:</strong> Un mercado al aire libre vibrante que ofrece productos frescos, flores y recuerdos.</li>
-      <li class="pt-1"><strong>Gastronomía romana:</strong> No te pierdas la pasta alla carbonara, la pizza romana, el gelato y el caffè espresso.</li>
-      <li class="pt-1"><strong>Museos Capitolinos:</strong> Uno de los museos públicos más antiguos del mundo, con una colección de arte y artefactos romanos.</li>
-      </ul>
-      </section>
-
-<h5 class="text-center mt-5">Mas informacion:</h5>
-<iframe class="modal-video mb-5" height="315" src="https://www.youtube.com/embed/XYSXxRAc2WY?si=reFDxUqJFV1Sn8kZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  
-  
-</div>
-</div>
-<div class="modal-footer">
-  <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
-</div>
-</div>
-</div>
+<div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+          <div class="modal-header" >
+              <h1 class="modal-title fs-7 text-danger ps-3" id="staticBackdropLabel">Roma</h1>
+              <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-lg-6">
+                      <img class="w-100" src="imagenes/roma/fontana-de-trevi.jpg" alt="Imagen de la fontana de Trevi" >
+                  </div>
+                  <div class="col-lg-6 mt-5">
+                      <p class="text-justify-css">Roma, la "Ciudad Eterna", es la capital de Italia y una de las ciudades más antiguas y fascinantes del mundo. Su rica historia, impresionante arquitectura y vibrante cultura atraen a millones de visitantes cada año.</p>
+                  </div> 
+                  <section class="p-3 mt-3">
+                      <h5 class="p-2">Aquí tienes algunas de sus atracciones más destacadas:</h5>
+                      <ul class="list-unstyled">
+                          <li class="mb-3">
+                              <strong>Coliseo Romano:</strong> El anfiteatro más grande jamás construido, un símbolo icónico de la antigua Roma.
+                          </li>
+                          <li class="mb-3">
+                              <strong>Foro Romano:</strong> El corazón de la antigua Roma, un complejo de ruinas que incluyen templos, basílicas y arcos triunfales.
+                          </li>
+                          <li class="mb-3">
+                              <strong>Panteón de Agripa:</strong> Un templo romano notablemente bien conservado, famoso por su cúpula con un óculo central.
+                          </li>
+                          <li class="mb-3">
+                              <strong>Ciudad del Vaticano:</strong> Un estado independiente dentro de Roma, hogar de la Basílica de San Pedro, los Museos Vaticanos y la Capilla Sixtina.
+                          </li>
+                          <li class="mb-3">
+                              <strong>Fontana di Trevi:</strong> Una fuente barroca espectacular, famosa por la tradición de lanzar monedas para asegurar un regreso a Roma.
+                          </li>
+                          <li class="mb-3">
+                              <strong>Plaza Navona:</strong> Una hermosa plaza barroca con tres fuentes impresionantes, incluyendo la Fuente de los Cuatro Ríos de Bernini.
+                          </li>
+                          <li class="mb-3">
+                              <strong>Escalinata de la Plaza de España:</strong> Una escalinata monumental que conecta la Plaza de España con la iglesia de Trinità dei Monti.
+                          </li>
+                          <li class="mb-3">
+                              <strong>Catacumbas de Roma:</strong> Túneles subterráneos utilizados como cementerios cristianos en la época romana temprana.
+                          </li>
+                          <li class="mb-3">
+                              <strong>Mercado de Campo de' Fiori:</strong> Un mercado al aire libre vibrante que ofrece productos frescos, flores y recuerdos.
+                          </li>
+                          <li class="mb-3">
+                              <strong>Museos Capitolinos:</strong> Uno de los museos públicos más antiguos del mundo, con una colección de arte y artefactos romanos.
+                          </li>
+                      </ul>
+                  </section>
+                  <h5 class="text-center mt-5">Mas informacion:</h5>
+                  <iframe class="modal-video mb-5" height="315" src="https://www.youtube.com/embed/XYSXxRAc2WY?si=reFDxUqJFV1Sn8kZ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+      </div>
+  </div>
 </div>
 
 
 <!-- Modal Milan-->
-<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelMilan" aria-hidden="true">
 <div class="modal-dialog modal-xl">
 ¿<div class="modal-content">
 <div class="modal-header">
-<h1 class="modal-title fs-7 text-danger ps-3" id="staticBackdropLabel">Milán</h1>
+<h1 class="modal-title fs-7 text-danger ps-3" id="staticBackdropLabelMilan">Milán</h1>
 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
 
 <div class="modal-body">
 <div class="row">
 <div class="col-lg-6">
-<img class="w-100" src="../lugares/imagenes/milan/galeria-vittorio.jpg" alt="Imagen de Milán">
+<img class="w-100" src="../lugares/imagenes/milan/galeria-vittorio.jpg" alt="Imagen la Galería Vittorio Emanuele II.">
 </div>
 <div class="col-lg-6 mt-3">
-<p>Milán, la capital de la moda de Italia, es una ciudad vibrante conocida por su diseño, arte y cultura. Hogar de la famosa Catedral de Milán y la ópera La Scala, Milán ofrece una mezcla única de elegancia moderna y rica historia. La ciudad también es famosa por su escena de compras de lujo, su deliciosa gastronomía y su patrimonio artístico</p>
+<p class="text-justify-css">Milán, la capital de la moda de Italia, es una ciudad vibrante conocida por su diseño, arte y cultura. Hogar de la famosa Catedral de Milán y la ópera La Scala, Milán ofrece una mezcla única de elegancia moderna y rica historia. La ciudad también es famosa por su escena de compras de lujo, su deliciosa gastronomía y su patrimonio artístico</p>
 </div>
 </div>
 
 <section class="p-3 mt-5">
+  <h5 class="p-2">Aquí tienes algunas de sus atracciones más destacadas:</h5>
   <ul>
-  <li><strong>Duomo de Milán:</strong> La catedral gótica icónica de la ciudad.</li>
-  <li><strong>La Última Cena:</strong> La famosa obra de Leonardo da Vinci (reserva anticipada obligatoria).</li>
-  <li><strong>Galería Vittorio Emanuele II:</strong> Una impresionante galería comercial.</li>
-  <li><strong>Castillo Sforzesco:</strong> Un castillo histórico con museos.</li>
-  <li><strong>Navigli:</strong> El distrito de canales con vida nocturna.</li>
-  <li><strong>Teatro alla Scala:</strong> Uno de los teatros de ópera más famosos.</li>
-  <li><strong>Pinacoteca di Brera:</strong> Una importante galería de arte.</li>
-  <li><strong>Parque Sempione:</strong> Un gran parque urbano para relajarse.</li>
-  <li><strong>Quadrilatero della Moda:</strong> El distrito de moda de lujo.</li>
-  <li><strong>Gastronomía milanesa:</strong> Prueba el risotto, la cotoletta y el aperitivo.</li>
+    <li class="mb-3"><strong>Duomo de Milán:</strong> La catedral gótica icónica de la ciudad.</li>
+    <li class="mb-3"><strong>La Última Cena:</strong> La famosa obra de Leonardo da Vinci (reserva anticipada obligatoria).</li>
+    <li class="mb-3"><strong>Galería Vittorio Emanuele II:</strong> Una impresionante galería comercial.</li>
+    <li class="mb-3"><strong>Castillo Sforzesco:</strong> Un castillo histórico con museos.</li>
+    <li class="mb-3"><strong>Navigli:</strong> El distrito de canales con vida nocturna.</li>
+    <li class="mb-3"><strong>Teatro alla Scala:</strong> Uno de los teatros de ópera más famosos.</li>
+    <li class="mb-3"><strong>Pinacoteca di Brera:</strong> Una importante galería de arte.</li>
+    <li class="mb-3"><strong>Parque Sempione:</strong> Un gran parque urbano para relajarse.</li>
+    <li class="mb-3"><strong>Quadrilatero della Moda:</strong> El distrito de moda de lujo.</li>
+    <li class="mb-3"><strong>Gastronomía milanesa:</strong> Prueba el risotto, la cotoletta y el aperitivo.</li>
   </ul>
-  </section>
+</section>
 
 <h5 class="text-center mt-5">Más información:</h5>
-<iframe class="modal-video mb-5 mx-auto d-block" height="315"  src="https://www.youtube.com/embed/oeLcR9iE3PA?si=pMdPW3JH1G3s0hgL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="modal-video mb-5 mx-auto d-block" height="315"  src="https://www.youtube.com/embed/oeLcR9iE3PA?si=pMdPW3JH1G3s0hgL" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 <div class="modal-footer">
@@ -263,43 +260,43 @@ aria-hidden="true">
 
 
 <!-- Modal Napoles-->
-<div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelBolonia" aria-hidden="true">
+<div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelNapoles" aria-hidden="true">
   <div class="modal-dialog modal-xl">
   <div class="modal-content">
   <div class="modal-header">
-  <h1 class="modal-title fs-7 text-danger ps-3" id="staticBackdropLabelBolonia">Napoles</h1>
+  <h1 class="modal-title fs-7 text-danger ps-3" id="staticBackdropLabelNapoles">Napoles</h1>
   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
   </div>
 
   <div class="modal-body">
   <div class="row">
   <div class="col-lg-6">
-  <img class="w-100" src="../lugares/imagenes/napoles/quartieri.jpg" alt="Imagen de Milán">
+  <img class="w-100" src="../lugares/imagenes/napoles/quartieri.jpg" alt="Imagen del barrio Quartieri Spagnoli, Napoles.">
   </div>
   <div class="col-lg-6 mt-3">
-  <p>Nápoles, una ciudad vibrante y llena de historia ubicada en la región de <strong>Campania</strong>, ofrece una mezcla única de cultura, gastronomía y belleza. Aquí tienes algunas de sus atracciones más destacadas:</p>
+  <p class="text-justify-css">Nápoles, una ciudad vibrante y llena de historia ubicada en la región de <strong>Campania</strong>, ofrece una mezcla única de cultura, gastronomía y belleza.</p>
   </div>
-
   <section class="p-3 mt-5">
-<ul>
-<li><strong>Duomo de Nápoles:</strong> La catedral gótica de la ciudad, con la Capilla de San Gennaro.</li>
-<li><strong>Nápoles Subterránea:</strong> Un fascinante laberinto de túneles y cámaras bajo la ciudad.</li>
-<li><strong>Museo Arqueológico Nacional de Nápoles:</strong> Alberga valiosos artefactos de Pompeya, Herculano y la cultura romana.</li>
-<li><strong>Palacio Real de Nápoles:</strong> Un majestuoso palacio con una rica historia y hermosos jardines.</li>
-<li><strong>Castel Nuovo:</strong> Un imponente castillo medieval con vistas panorámicas del puerto.</li>
-<li><strong>Pompeya y Herculano:</strong> Antiguas ciudades romanas preservadas por la erupción del Vesubio.</li>
-<li><strong>Capilla Sansevero:</strong> Famosa por la escultura del Cristo Velado, una obra maestra del arte barroco.</li>
-<li><strong>Via San Gregorio Armeno:</strong> Conocida como la "calle de los belenes", llena de talleres artesanales.</li>
-<li><strong>Quartieri Spagnoli:</strong> Un barrio auténtico y vibrante con calles estrechas y ambiente local.</li>
-<li><strong>Gastronomía napolitana:</strong> Prueba la auténtica pizza napolitana, la sfogliatella y el caffè sospeso.</li>
-<li><strong>Vesubio:</strong> El volcán activo que domina la bahía de Nápoles, con senderos para explorar.</li>
-<li><strong>Teatro di San Carlo:</strong> Uno de los teatros de ópera más antiguos y prestigiosos de Europa.</li>
-<li><strong>Catacumbas de San Gennaro:</strong> Antiguos cementerios cristianos con frescos paleocristianos.</li>
-</ul>
-</section>
+    <h5 class="p-2">Aquí tienes algunas de sus atracciones más destacadas:</h5>
+    <ul>
+      <li class="mb-3"><strong>Duomo de Nápoles:</strong> La catedral gótica de la ciudad, con la Capilla de San Gennaro.</li>
+      <li class="mb-3"><strong>Nápoles Subterránea:</strong> Un fascinante laberinto de túneles y cámaras bajo la ciudad.</li>
+      <li class="mb-3"><strong>Museo Arqueológico Nacional de Nápoles:</strong> Alberga valiosos artefactos de Pompeya, Herculano y la cultura romana.</li>
+      <li class="mb-3"><strong>Palacio Real de Nápoles:</strong> Un majestuoso palacio con una rica historia y hermosos jardines.</li>
+      <li class="mb-3"><strong>Castel Nuovo:</strong> Un imponente castillo medieval con vistas panorámicas del puerto.</li>
+      <li class="mb-3"><strong>Pompeya y Herculano:</strong> Antiguas ciudades romanas preservadas por la erupción del Vesubio.</li>
+      <li class="mb-3"><strong>Capilla Sansevero:</strong> Famosa por la escultura del Cristo Velado, una obra maestra del arte barroco.</li>
+      <li class="mb-3"><strong>Via San Gregorio Armeno:</strong> Conocida como la "calle de los belenes", llena de talleres artesanales.</li>
+      <li class="mb-3"><strong>Quartieri Spagnoli:</strong> Un barrio auténtico y vibrante con calles estrechas y ambiente local.</li>
+      <li class="mb-3"><strong>Gastronomía napolitana:</strong> Prueba la auténtica pizza napolitana, la sfogliatella y el caffè sospeso.</li>
+      <li class="mb-3"><strong>Vesubio:</strong> El volcán activo que domina la bahía de Nápoles, con senderos para explorar.</li>
+      <li class="mb-3"><strong>Teatro di San Carlo:</strong> Uno de los teatros de ópera más antiguos y prestigiosos de Europa.</li>
+      <li class="mb-3"><strong>Catacumbas de San Gennaro:</strong> Antiguos cementerios cristianos con frescos paleocristianos.</li>
+    </ul>
+  </section>
 
       <h5 class="text-center mt-5">Más información:</h5>
-      <iframe class="modal-video mb-5" height="315" src="https://www.youtube.com/embed/lEgixxgJMTE?si=PiIPdlkDdqEcAsGP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe class="modal-video mb-5" height="315" src="https://www.youtube.com/embed/lEgixxgJMTE?si=PiIPdlkDdqEcAsGP" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
 
 <div class="modal-footer">
@@ -312,12 +309,12 @@ aria-hidden="true">
 </div>
 
 
-<!-- Modal Vencia-->
-<div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelBolonia" aria-hidden="true">
+<!-- Modal Venecia-->
+<div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelVenecia" aria-hidden="true">
   <div class="modal-dialog modal-xl">
   <div class="modal-content">
   <div class="modal-header">
-  <h1 class="modal-title fs-7 text-danger ps-3" id="staticBackdropLabelBolonia">Venecia</h1>
+  <h1 class="modal-title fs-7 text-danger ps-3" id="staticBackdropLabelVenecia">Venecia</h1>
   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
   </div>
 
@@ -325,31 +322,32 @@ aria-hidden="true">
 <div class="modal-body">
   <div class="row">
   <div class="col-lg-6">
-  <img class="w-100" src="../lugares/imagenes/venecia/canales.jpg" alt="Imagen de Venecia">
+  <img class="w-100" src="../lugares/imagenes/venecia/canales.jpg" alt="Imagen de los canales de Venecia">
   </div>
   <div class="col-lg-6 mt-3">
-  <p>Venecia, una ciudad única construida sobre el agua y ubicada en la región de <strong>Véneto</strong>, es famosa por sus canales, su rica historia y su arte. Aquí tienes algunas de sus atracciones más destacadas:</p>
+  <p class="text-justify-css">Venecia, una ciudad única construida sobre el agua y ubicada en la región de <strong>Véneto</strong>, es famosa por sus canales, su rica historia y su arte.</p>
   </div>
   </div>
   
   <section class="p-3 mt-5">
-  <ul>
-  <li><strong>Gran Canal:</strong> El principal canal de Venecia, donde puedes pasear en góndola o vaporetto y admirar los palacios y puentes.</li>
-  <li><strong>Plaza de San Marcos:</strong> El corazón de Venecia, rodeada de la Basílica de San Marcos, el Palacio Ducal y el Campanile.</li>
-  <li><strong>Basílica de San Marcos:</strong> Una impresionante iglesia con mosaicos dorados y una rica historia.</li>
-  <li><strong>Palacio Ducal:</strong> Un antiguo palacio gótico con lujosos interiores y el famoso Puente de los Suspiros.</li>
-  <li><strong>Puente de Rialto:</strong> Uno de los puentes más famosos de Venecia, con tiendas y vistas panorámicas del Gran Canal.</li>
-  <li><strong>Islas de Murano y Burano:</strong> Murano es famosa por su vidrio soplado, mientras que Burano destaca por sus casas de colores.</li>
-  <li><strong>Teatro La Fenice:</strong> Un histórico teatro de ópera con una rica programación cultural.</li>
-  <li><strong>Galería de la Academia:</strong> Alberga una importante colección de arte veneciano, incluyendo obras de Tiziano y Tintoretto.</li>
-  <li><strong>Mercado de Rialto:</strong> Un mercado de pescado y productos frescos con un ambiente animado.</li>
-  <li><strong>Paseos en Góndola:</strong> Una experiencia icónica de Venecia, aunque puede ser costosa.</li>
-  <li><strong>Carnaval de Venecia:</strong> Una celebración anual con máscaras elaboradas y desfiles.</li>
-  </ul>
+    <h5 class="p-2">Aquí tienes algunas de sus atracciones más destacadas:</h5>
+    <ul>
+      <li class="mb-3"><strong>Gran Canal:</strong> El principal canal de Venecia, donde puedes pasear en góndola o vaporetto y admirar los palacios y puentes.</li>
+      <li class="mb-3"><strong>Plaza de San Marcos:</strong> El corazón de Venecia, rodeada de la Basílica de San Marcos, el Palacio Ducal y el Campanile.</li>
+      <li class="mb-3"><strong>Basílica de San Marcos:</strong> Una impresionante iglesia con mosaicos dorados y una rica historia.</li>
+      <li class="mb-3"><strong>Palacio Ducal:</strong> Un antiguo palacio gótico con lujosos interiores y el famoso Puente de los Suspiros.</li>
+      <li class="mb-3"><strong>Puente de Rialto:</strong> Uno de los puentes más famosos de Venecia, con tiendas y vistas panorámicas del Gran Canal.</li>
+      <li class="mb-3"><strong>Islas de Murano y Burano:</strong> Murano es famosa por su vidrio soplado, mientras que Burano destaca por sus casas de colores.</li>
+      <li class="mb-3"><strong>Teatro La Fenice:</strong> Un histórico teatro de ópera con una rica programación cultural.</li>
+      <li class="mb-3"><strong>Galería de la Academia:</strong> Alberga una importante colección de arte veneciano, incluyendo obras de Tiziano y Tintoretto.</li>
+      <li class="mb-3"><strong>Mercado de Rialto:</strong> Un mercado de pescado y productos frescos con un ambiente animado.</li>
+      <li class="mb-3"><strong>Paseos en Góndola:</strong> Una experiencia icónica de Venecia, aunque puede ser costosa.</li>
+      <li class="mb-3"><strong>Carnaval de Venecia:</strong> Una celebración anual con máscaras elaboradas y desfiles.</li>
+    </ul>
   </section>
   
   <h5 class="text-center mt-5">Más información:</h5>
-  <iframe  class="modal-video mb-5 mx-auto d-block" height="315" src="https://www.youtube.com/embed/Z7zhig9Y7sY?si=CPGHBPghqY43-oz9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe  class="modal-video mb-5 mx-auto d-block" height="315" src="https://www.youtube.com/embed/Z7zhig9Y7sY?si=CPGHBPghqY43-oz9" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 
 <div class="modal-footer">
@@ -364,44 +362,45 @@ aria-hidden="true">
 
 <!-- Modal Florencia-->
 
-<div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" 
+<div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelFlorencia" 
 aria-hidden="true">
 <div class="modal-dialog modal-xl">
 <div class="modal-content">
 <div class="modal-header">
-<h1 class="modal-title fs-7 text-danger ps-3" id="staticBackdropLabel">Florencia</h1>
+<h1 class="modal-title fs-7 text-danger ps-3" id="staticBackdropLabelFlorencia">Florencia</h1>
 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
 
 <div class="modal-body">
 <div class="row">
 <div class="col-lg-6">
-<img class="w-100" src="../lugares/imagenes/florencia/puente-viejo.jpg" alt="Imagen de Florencia">
+<img class="w-100" src="../lugares/imagenes/florencia/puente-viejo.jpg" alt="Imagen de la vista de Florencia">
 </div>
 <div class="col-lg-6 mt-3">
-<p>Florencia, la cuna del Renacimiento y capital de la región de Toscana, es una ciudad llena de arte, historia y belleza. Aquí tienes algunas de sus atracciones más destacadas:</p>
+<p class="text-justify-css">Florencia, la cuna del Renacimiento y capital de la región de Toscana, es una ciudad llena de arte, historia y belleza.</p>
 </div>
 </div>
 
 <section class="p-3 mt-5">
-<ul>
-<li><strong>Catedral de Santa María del Fiore (Duomo):</strong> Una obra maestra de la arquitectura gótica con la impresionante cúpula de Brunelleschi.</li>
-<li><strong>Galería Uffizi:</strong> Alberga una de las colecciones de arte renacentista más importantes del mundo, incluyendo obras de Botticelli, Leonardo da Vinci y Miguel Ángel.</li>
-<li><strong>Ponte Vecchio:</strong> El único puente de Florencia que sobrevivió a la Segunda Guerra Mundial, famoso por sus tiendas de joyería.</li>
-<li><strong>Palacio Pitti:</strong> Un enorme palacio renacentista con varios museos y los Jardines de Boboli.</li>
-<li><strong>Galería de la Academia:</strong> Famosa por albergar la escultura del David de Miguel Ángel.</li>
-<li><strong>Jardines de Boboli:</strong> Un hermoso jardín renacentista detrás del Palacio Pitti, con fuentes, esculturas y vistas panorámicas.</li>
-<li><strong>Plaza de la Señoría:</strong> El corazón político de Florencia, con el Palazzo Vecchio y la Fuente de Neptuno.</li>
-<li><strong>Capilla de los Médici:</strong> Una impresionante capilla barroca con tumbas de la familia Médici.</li>
-<li><strong>Basílica de San Lorenzo:</strong> La iglesia de la familia Médici, con la Sacristía Vieja de Brunelleschi y la Biblioteca Laurenciana de Miguel Ángel.</li>
-<li><strong>Mercado de San Lorenzo:</strong> Un mercado al aire libre donde puedes encontrar artículos de cuero, ropa y recuerdos.</li>
-<li><strong>Mirador de la Plaza de Michelangelo:</strong> Ofrece una vista panorámica de Florencia, especialmente hermosa al atardecer.</li>
-<li> <strong>Torre de Pisa</strong>Si estás en Florencia, una excursión recomendada es a la Torre de Pisa, ubicada a solo una hora en tren.</li>
-</ul>
+  <h5 class="p-2">Aquí tienes algunas de sus atracciones más destacadas:</h5>
+  <ul>
+    <li class="mb-3"><strong>Catedral de Santa María del Fiore (Duomo):</strong> Una obra maestra de la arquitectura gótica con la impresionante cúpula de Brunelleschi.</li>
+    <li class="mb-3"><strong>Galería Uffizi:</strong> Alberga una de las colecciones de arte renacentista más importantes del mundo, incluyendo obras de Botticelli, Leonardo da Vinci y Miguel Ángel.</li>
+    <li class="mb-3"><strong>Ponte Vecchio:</strong> El único puente de Florencia que sobrevivió a la Segunda Guerra Mundial, famoso por sus tiendas de joyería.</li>
+    <li class="mb-3"><strong>Palacio Pitti:</strong> Un enorme palacio renacentista con varios museos y los Jardines de Boboli.</li>
+    <li class="mb-3"><strong>Galería de la Academia:</strong> Famosa por albergar la escultura del David de Miguel Ángel.</li>
+    <li class="mb-3"><strong>Jardines de Boboli:</strong> Un hermoso jardín renacentista detrás del Palacio Pitti, con fuentes, esculturas y vistas panorámicas.</li>
+    <li class="mb-3"><strong>Plaza de la Señoría:</strong> El corazón político de Florencia, con el Palazzo Vecchio y la Fuente de Neptuno.</li>
+    <li class="mb-3"><strong>Capilla de los Médici:</strong> Una impresionante capilla barroca con tumbas de la familia Médici.</li>
+    <li class="mb-3"><strong>Basílica de San Lorenzo:</strong> La iglesia de la familia Médici, con la Sacristía Vieja de Brunelleschi y la Biblioteca Laurenciana de Miguel Ángel.</li>
+    <li class="mb-3"><strong>Mercado de San Lorenzo:</strong> Un mercado al aire libre donde puedes encontrar artículos de cuero, ropa y recuerdos.</li>
+    <li class="mb-3"><strong>Mirador de la Plaza de Michelangelo:</strong> Ofrece una vista panorámica de Florencia, especialmente hermosa al atardecer.</li>
+    <li class="mb-3"><strong>Torre de Pisa:</strong> Si estás en Florencia, una excursión recomendada es a la Torre de Pisa, ubicada a solo una hora en tren.</li>
+  </ul>
 </section>
 
 <h5 class="text-center mt-5">Más información:</h5>
-<iframe class="modal-video mb-5 mx-auto d-block" height="315" src="https://www.youtube.com/embed/57C8E_5VXQE?si=NZGpiIaFFLNYO7xF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="modal-video mb-5 mx-auto d-block" height="315" src="https://www.youtube.com/embed/57C8E_5VXQE?si=NZGpiIaFFLNYO7xF" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 <div class="modal-footer">
@@ -413,40 +412,41 @@ aria-hidden="true">
 
 
 <!-- Modal Costa Amalfitana-->
-<div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelBolonia" aria-hidden="true">
+<div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelCosta" aria-hidden="true">
   <div class="modal-dialog modal-xl">
   <div class="modal-content">
   <div class="modal-header">
-  <h1 class="modal-title fs-7 text-danger ps-3" id="staticBackdropLabelBolonia">Costa Alamfitana</h1>
+  <h1 class="modal-title fs-7 text-danger ps-3" id="staticBackdropLabelCosta">Costa Alamfitana</h1>
   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
   </div>
 
   <div class="modal-body">
   <div class="row">
   <div class="col-lg-6">
-  <img class="w-100" src="../lugares/imagenes/costa-amalfitana/puente-furore.jpg" alt="Imagen de la Costa Amalfitana">
+  <img class="w-100" src="../lugares/imagenes/costa-amalfitana/puente-furore.jpg" alt="Imagen del puente furor de la Costa Amalfitana">
   </div>
   <div class="col-lg-6 mt-3">
-  <p>La Costa Amalfitana, un tramo de costa italiano espectacular ubicado en la región de <strong>Campania</strong>, es famosa por sus pueblos pintorescos, paisajes impresionantes y ambiente lujoso. Aquí tienes algunas de sus atracciones más destacadas:</p>
+  <p class="text-justify-css">La Costa Amalfitana, un tramo de costa italiano espectacular ubicado en la región de <strong>Campania</strong>, es famosa por sus pueblos pintorescos, paisajes impresionantes y ambiente lujoso. Aquí tienes algunas de sus atracciones más destacadas:</p>
   </div>
   </div>
-                 <section class="p-3 mt-5">
-                  <ul>
-                  <li><strong>Positano:</strong> Un pueblo icónico con casas de colores pastel que descienden hacia el mar.</li>
-                  <li><strong>Amalfi:</strong> El corazón histórico de la costa, con su impresionante catedral y puerto encantador.</li>
-                  <li><strong>Ravello:</strong> Un pueblo en la cima de la colina con vistas panorámicas y jardines exuberantes en Villa Rufolo y Villa Cimbrone.</li>
-                  <li><strong>Praiano:</strong> Un pueblo pesquero tranquilo con hermosas playas y vistas al atardecer.</li>
-                  <li><strong>Fiordo di Furore:</strong> Un fiordo escondido con una pequeña playa y un puente pintoresco.</li>
-                  <li><strong>Sendero de los Dioses (Sentiero degli Dei):</strong> Una ruta de senderismo espectacular con vistas panorámicas de la costa.</li>
-                  <li><strong>Isla de Capri:</strong> Famosa por la Gruta Azul, los Faraglioni y su ambiente lujoso.</li>
-                  <li><strong>Vietri sul Mare:</strong> Conocida por su cerámica colorida y playas encantadoras.</li>
-                  <li><strong>Atrani:</strong> Uno de los pueblos más pequeños y pintorescos de la costa.</li>
-                  <li><strong>Minori y Maiori:</strong> Dos pueblos vecinos con playas de arena y ruinas romanas.</li>
-                  </ul>
-              </section>
+  <section class="p-3 mt-5">
+    <h5 class="p-2">Aquí tienes algunas de sus atracciones más destacadas:</h5>
+    <ul>
+      <li class="mb-3"><strong>Positano:</strong> Un pueblo icónico con casas de colores pastel que descienden hacia el mar.</li>
+      <li class="mb-3"><strong>Amalfi:</strong> El corazón histórico de la costa, con su impresionante catedral y puerto encantador.</li>
+      <li class="mb-3"><strong>Ravello:</strong> Un pueblo en la cima de la colina con vistas panorámicas y jardines exuberantes en Villa Rufolo y Villa Cimbrone.</li>
+      <li class="mb-3"><strong>Praiano:</strong> Un pueblo pesquero tranquilo con hermosas playas y vistas al atardecer.</li>
+      <li class="mb-3"><strong>Fiordo di Furore:</strong> Un fiordo escondido con una pequeña playa y un puente pintoresco.</li>
+      <li class="mb-3"><strong>Sendero de los Dioses (Sentiero degli Dei):</strong> Una ruta de senderismo espectacular con vistas panorámicas de la costa.</li>
+      <li class="mb-3"><strong>Isla de Capri:</strong> Famosa por la Gruta Azul, los Faraglioni y su ambiente lujoso.</li>
+      <li class="mb-3"><strong>Vietri sul Mare:</strong> Conocida por su cerámica colorida y playas encantadoras.</li>
+      <li class="mb-3"><strong>Atrani:</strong> Uno de los pueblos más pequeños y pintorescos de la costa.</li>
+      <li class="mb-3"><strong>Minori y Maiori:</strong> Dos pueblos vecinos con playas de arena y ruinas romanas.</li>
+    </ul>
+  </section>
 
 <h5 class="text-center mt-5">Más información:</h5>
-<iframe class="modal-video mb-5 mx-auto d-block" height="315" src="https://www.youtube.com/embed/7lugpIfQ9AI?si=O35uHziPpxpN6tX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="modal-video mb-5 mx-auto d-block" height="315" src="https://www.youtube.com/embed/7lugpIfQ9AI?si=O35uHziPpxpN6tX4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
           </div>
 <div class="modal-footer">
@@ -457,40 +457,42 @@ aria-hidden="true">
 </div>     
 
 <!-- Modal Cinque Terre-->
-<div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelBolonia" aria-hidden="true">
+<div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelCinque" aria-hidden="true">
   <div class="modal-dialog modal-xl">
   <div class="modal-content">
   <div class="modal-header">
-  <h1 class="modal-title fs-7 text-danger ps-3" id="staticBackdropLabelBolonia">Cinque Terre</h1>
+  <h1 class="modal-title fs-7 text-danger ps-3" id="staticBackdropLabelCinque">Cinque Terre</h1>
   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
   </div>
   
   <div class="modal-body">
   <div class="row">
   <div class="col-lg-6">
-  <img class="w-100" src="../lugares/imagenes/cinque-terre/mar.jpg" alt="Imagen de Cinque Terre">
+  <img class="w-100" src="../lugares/imagenes/cinque-terre/mar.jpg" alt="Imagen del mar de Cinque Terre">
   </div>
   <div class="col-lg-6 mt-3">
-  <p>Cinque Terre, un conjunto de cinco pueblos de pescadores coloridos en la costa italiana, ubicado en la región de <strong>Liguria</strong>, es conocido por sus paisajes espectaculares, senderos de senderismo y encanto rústico. Aquí tienes algunas de sus atracciones más destacadas:</p>
+  <p class="text-justify-css">Cinque Terre, un conjunto de cinco pueblos de pescadores coloridos en la costa italiana, ubicado en la región de <strong>Liguria</strong>, es conocido por sus paisajes espectaculares, senderos de senderismo y encanto rústico.</p>
   </div>
   </div>
-              <section class="p-3 mt-5">
-                  <ul>
-                  <li><strong>Monterosso al Mare:</strong> El pueblo más grande, con una playa de arena y un paseo marítimo animado.</li>
-                  <li><strong>Vernazza:</strong> Un pueblo pintoresco con un puerto encantador y casas de colores vibrantes.</li>
-                  <li><strong>Corniglia:</strong> El único pueblo sin acceso directo al mar, situado en la cima de una colina con vistas panorámicas.</li>
-                  <li><strong>Manarola:</strong> Famoso por sus casas de colores que se aferran a los acantilados y su ambiente romántico.</li>
-                  <li><strong>Riomaggiore:</strong> El pueblo más oriental, conocido por su Via dell'Amore, un sendero romántico hacia Manarola.</li>
-                  <li><strong>Sendero Azul (Sentiero Azzurro):</strong> Una ruta de senderismo que conecta los cinco pueblos, ofreciendo vistas impresionantes de la costa.</li>
-                  <li><strong>Iglesia de San Juan Bautista (Monterosso):</strong> Una iglesia gótica con una fachada a rayas blancas y negras.</li>
-                  <li><strong>Castillo de Doria (Vernazza):</strong> Una fortaleza medieval con vistas panorámicas del pueblo y el mar.</li>
-                  <li><strong>Santuario de Nuestra Señora de Montenero (Riomaggiore):</strong> Un santuario en la cima de una colina con vistas espectaculares.</li>
-                  <li><strong>Playas de Cinque Terre:</strong> Pequeñas playas escondidas y calas rocosas ideales para nadar y relajarse.</li>
-                  </ul>
-              </section>
+  <section class="p-3 mt-5">
+    <h5 class="p-2">Aquí tienes algunas de sus atracciones más destacadas:</h5>
+    <ul>
+      <li class="mb-3"><strong>Monterosso al Mare:</strong> El pueblo más grande, con una playa de arena y un paseo marítimo animado.</li>
+      <li class="mb-3"><strong>Vernazza:</strong> Un pueblo pintoresco con un puerto encantador y casas de colores vibrantes.</li>
+      <li class="mb-3"><strong>Corniglia:</strong> El único pueblo sin acceso directo al mar, situado en la cima de una colina con vistas panorámicas.</li>
+      <li class="mb-3"><strong>Manarola:</strong> Famoso por sus casas de colores que se aferran a los acantilados y su ambiente romántico.</li>
+      <li class="mb-3"><strong>Riomaggiore:</strong> El pueblo más oriental, conocido por su Via dell'Amore, un sendero romántico hacia Manarola.</li>
+      <li class="mb-3"><strong>Sendero Azul (Sentiero Azzurro):</strong> Una ruta de senderismo que conecta los cinco pueblos, ofreciendo vistas impresionantes de la costa.</li>
+      <li class="mb-3"><strong>Iglesia de San Juan Bautista (Monterosso):</strong> Una iglesia gótica con una fachada a rayas blancas y negras.</li>
+      <li class="mb-3"><strong>Castillo de Doria (Vernazza):</strong> Una fortaleza medieval con vistas panorámicas del pueblo y el mar.</li>
+      <li class="mb-3"><strong>Santuario de Nuestra Señora de Montenero (Riomaggiore):</strong> Un santuario en la cima de una colina con vistas espectaculares.</li>
+      <li class="mb-3"><strong>Playas de Cinque Terre:</strong> Pequeñas playas escondidas y calas rocosas ideales para nadar y relajarse.</li>
+    </ul>
+  </section>
+
 
 <h5 class="text-center mt-5">Más información:</h5>
-<iframe class="modal-video mb-5 mx-auto d-block" height="315" src="https://www.youtube.com/embed/xV1pC-aJ6N8?si=lzQDjSY8pWwx0G7p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="modal-video mb-5 mx-auto d-block" height="315" src="https://www.youtube.com/embed/xV1pC-aJ6N8?si=lzQDjSY8pWwx0G7p" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 <div class="modal-footer">
@@ -501,40 +503,42 @@ aria-hidden="true">
 </div>
 
 <!-- Modal Verona-->
-<div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelBolonia" aria-hidden="true">
+<div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelVerona" aria-hidden="true">
   <div class="modal-dialog modal-xl">
   <div class="modal-content">
   <div class="modal-header">
-  <h1 class="modal-title fs-7 text-danger ps-3" id="staticBackdropLabelBolonia">Verona</h1>
+  <h1 class="modal-title fs-7 text-danger ps-3" id="staticBackdropLabelVerona">Verona</h1>
   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
   </div>
   
   <div class="modal-body">
   <div class="row">
   <div class="col-lg-6">
-  <img class="w-100" src="../lugares/imagenes/verona/torre-verona.jpg" alt="Imagen de Verona">
+  <img class="w-100" src="../lugares/imagenes/verona/torre-verona.jpg" alt="Imagen de la Torre dei Lamberti de Verona">
   </div>
   <div class="col-lg-6 mt-3">
-  <p>Verona, la ciudad del amor inmortalizada por Shakespeare en *Romeo y Julieta*, ubicada en la región de <strong>Véneto</strong>, es una ciudad llena de historia, arte y romanticismo. Aquí tienes algunas de sus atracciones más destacadas:</p>
+  <p class="text-justify-css">Verona, la ciudad del amor inmortalizada por Shakespeare en *Romeo y Julieta*, ubicada en la región de <strong>Véneto</strong>, es una ciudad llena de historia, arte y romanticismo.</p>
   </div>
   </div>
-                <section class="p-3 mt-5">
-                    <ul>
-                    <li><strong>Arena de Verona:</strong> Un anfiteatro romano impresionante, uno de los mejor conservados del mundo, que todavía se utiliza para óperas y conciertos.</li>
-                    <li><strong>Casa de Julieta:</strong> Un lugar de peregrinación para los amantes de Shakespeare, con el famoso balcón y una estatua de Julieta.</li>
-                    <li><strong>Piazza delle Erbe:</strong> Una plaza animada rodeada de edificios históricos, con el mercado de frutas y verduras y la fuente de Madonna Verona.</li>
-                    <li><strong>Piazza dei Signori:</strong> Una plaza elegante rodeada de palacios renacentistas, con la estatua de Dante Alighieri.</li>
-                    <li><strong>Castelvecchio:</strong> Un castillo medieval impresionante con un puente fortificado, que alberga el Museo Cívico de Verona.</li>
-                    <li><strong>Puente de Piedra (Ponte Pietra):</strong> Un puente romano antiguo que cruza el río Adigio, ofreciendo vistas panorámicas de la ciudad.</li>
-                    <li><strong>Teatro Romano:</strong> Un teatro romano antiguo que todavía se utiliza para representaciones teatrales y conciertos.</li>
-                    <li><strong>Catedral de Verona (Duomo):</strong> Una catedral románica con elementos góticos y renacentistas, que alberga obras de arte importantes.</li>
-                    <li><strong>Basílica de San Zeno Maggiore:</strong> Una basílica románica impresionante con frescos y esculturas importantes.</li>
-                    <li><strong>Giardino Giusti:</strong> Un jardín renacentista hermoso con cipreses, fuentes y laberintos.</li>
-                    </ul>
-                </section>
+  
+  <section class="p-3 mt-5">
+    <h5 class="p-2">Aquí tienes algunas de sus atracciones más destacadas:</h5>
+    <ul>
+      <li class="mb-3"><strong>Arena de Verona:</strong> Un anfiteatro romano impresionante, uno de los mejor conservados del mundo, que todavía se utiliza para óperas y conciertos.</li>
+      <li class="mb-3"><strong>Casa de Julieta:</strong> Un lugar de peregrinación para los amantes de Shakespeare, con el famoso balcón y una estatua de Julieta.</li>
+      <li class="mb-3"><strong>Piazza delle Erbe:</strong> Una plaza animada rodeada de edificios históricos, con el mercado de frutas y verduras y la fuente de Madonna Verona.</li>
+      <li class="mb-3"><strong>Piazza dei Signori:</strong> Una plaza elegante rodeada de palacios renacentistas, con la estatua de Dante Alighieri.</li>
+      <li class="mb-3"><strong>Castelvecchio:</strong> Un castillo medieval impresionante con un puente fortificado, que alberga el Museo Cívico de Verona.</li>
+      <li class="mb-3"><strong>Puente de Piedra (Ponte Pietra):</strong> Un puente romano antiguo que cruza el río Adigio, ofreciendo vistas panorámicas de la ciudad.</li>
+      <li class="mb-3"><strong>Teatro Romano:</strong> Un teatro romano antiguo que todavía se utiliza para representaciones teatrales y conciertos.</li>
+      <li class="mb-3"><strong>Catedral de Verona (Duomo):</strong> Una catedral románica con elementos góticos y renacentistas, que alberga obras de arte importantes.</li>
+      <li class="mb-3"><strong>Basílica de San Zeno Maggiore:</strong> Una basílica románica impresionante con frescos y esculturas importantes.</li>
+      <li class="mb-3"><strong>Giardino Giusti:</strong> Un jardín renacentista hermoso con cipreses, fuentes y laberintos.</li>
+    </ul>
+  </section>
 
 <h5 class="text-center mt-5">Más información:</h5>
-<iframe class="modal-video mb-5 mx-auto d-block" height="315" src="https://www.youtube.com/embed/mOW62mjxBNc?si=3JVEmS6wQunakI-T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="modal-video mb-5 mx-auto d-block" height="315" src="https://www.youtube.com/embed/mOW62mjxBNc?si=3JVEmS6wQunakI-T" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 <div class="modal-footer">
@@ -557,29 +561,30 @@ aria-hidden="true">
 <div class="modal-body">
 <div class="row">
 <div class="col-lg-6">
-<img class="w-100" src="../lugares/imagenes/sicilia/taormina.jpg" alt="Imagen de Sicilia">
+<img class="w-100" src="../lugares/imagenes/sicilia/taormina.jpg" alt="Imagen de Taormina, Sicilia.">
 </div>
 <div class="col-lg-6 mt-3">
-<p>Sicilia, la isla más grande del Mediterráneo y una región autónoma de Italia, es una tierra de contrastes con una rica historia, paisajes diversos y una cultura vibrante. Aquí tienes algunas de sus atracciones más destacadas:</p>
+<p class="text-justify-css">Sicilia, la isla más grande del Mediterráneo y una región autónoma de Italia, es una tierra de contrastes con una rica historia, paisajes diversos y una cultura vibrante.</p>
 </div>
 </div>
-              <section class="p-3 mt-5">
-                  <ul>
-                  <li><strong>Valle de los Templos (Agrigento):</strong> Un sitio arqueológico impresionante con templos griegos antiguos bien conservados.</li>
-                  <li><strong>Etna:</strong> El volcán activo más alto de Europa, con paisajes lunares y oportunidades para hacer senderismo y esquí.</li>
-                  <li><strong>Palermo:</strong> La capital de Sicilia, con una mezcla de arquitectura árabe-normanda, mercados bulliciosos y una rica historia.</li>
-                  <li><strong>Taormina:</strong> Un pueblo pintoresco en la cima de una colina con vistas panorámicas del mar Jónico y el Etna.</li>
-                  <li><strong>Siracusa (Ortigia):</strong> Una ciudad antigua con ruinas griegas y romanas, un hermoso puerto y la fuente de Aretusa.</li>
-                  <li><strong>Catania:</strong> Una ciudad barroca animada con un mercado de pescado vibrante y la Piazza del Duomo.</li>
-                  <li><strong>Cefalú:</strong> Un pueblo pesquero encantador con una catedral normanda impresionante y una playa de arena.</li>
-                  <li><strong>Islas Eolias:</strong> Un archipiélago volcánico con paisajes espectaculares, aguas cristalinas y oportunidades para hacer senderismo y buceo.</li>
-                  <li><strong>Scala dei Turchi:</strong> Un acantilado blanco impresionante con forma de escalera, situado en la costa sur de Sicilia.</li>
-                  <li><strong>Monreale:</strong> Famosa por su catedral normanda con mosaicos dorados impresionantes.</li>
-                  </ul>
-              </section>
+<section class="p-3 mt-5">
+  <h5 class="p-2">Aquí tienes algunas de sus atracciones más destacadas:</h5>
+  <ul>
+    <li class="mb-3"><strong>Valle de los Templos (Agrigento):</strong> Un sitio arqueológico impresionante con templos griegos antiguos bien conservados.</li>
+    <li class="mb-3"><strong>Etna:</strong> El volcán activo más alto de Europa, con paisajes lunares y oportunidades para hacer senderismo y esquí.</li>
+    <li class="mb-3"><strong>Palermo:</strong> La capital de Sicilia, con una mezcla de arquitectura árabe-normanda, mercados bulliciosos y una rica historia.</li>
+    <li class="mb-3"><strong>Taormina:</strong> Un pueblo pintoresco en la cima de una colina con vistas panorámicas del mar Jónico y el Etna.</li>
+    <li class="mb-3"><strong>Siracusa (Ortigia):</strong> Una ciudad antigua con ruinas griegas y romanas, un hermoso puerto y la fuente de Aretusa.</li>
+    <li class="mb-3"><strong>Catania:</strong> Una ciudad barroca animada con un mercado de pescado vibrante y la Piazza del Duomo.</li>
+    <li class="mb-3"><strong>Cefalú:</strong> Un pueblo pesquero encantador con una catedral normanda impresionante y una playa de arena.</li>
+    <li class="mb-3"><strong>Islas Eolias:</strong> Un archipiélago volcánico con paisajes espectaculares, aguas cristalinas y oportunidades para hacer senderismo y buceo.</li>
+    <li class="mb-3"><strong>Scala dei Turchi:</strong> Un acantilado blanco impresionante con forma de escalera, situado en la costa sur de Sicilia.</li>
+    <li class="mb-3"><strong>Monreale:</strong> Famosa por su catedral normanda con mosaicos dorados impresionantes.</li>
+  </ul>
+</section>
 
 <h5 class="text-center mt-5">Más información:</h5>
-<iframe class="modal-video mb-5 mx-auto d-block" height="315" src="https://www.youtube.com/embed/naJotwAaPRc?si=WQfn9cAibkTaMhoF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+<iframe class="modal-video mb-5 mx-auto d-block" height="315" src="https://www.youtube.com/embed/naJotwAaPRc?si=WQfn9cAibkTaMhoF" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
 </div>
 
 <div class="modal-footer">
@@ -602,30 +607,29 @@ aria-hidden="true">
 <div class="row">
 
 <div class="col-lg-6">
-<img class="w-100" src="../lugares/imagenes/bolonia/santuario.jpg" alt="Imagen de Bolonia">
+<img class="w-100" src="../lugares/imagenes/bolonia/santuario.jpg" alt="Imagen del Santuario de San Luca, Bolonia.">
 </div>
  
 <div class="col-lg-6 mt-3">
-<p>Bolonia, la capital de Emilia-Romaña, es conocida por su rica historia, su impresionante arquitectura medieval y su deliciosa gastronomía. Aquí tienes algunos de sus lugares más destacados:</p>
+<p class="text-justify-css">Bolonia, la capital de Emilia-Romaña, es conocida por su rica historia, su impresionante arquitectura medieval y su deliciosa gastronomía.</p>
 </div>
 </div>
-              <section class="p-3 mt-5">
-              <ul>
-              <li><strong>Piazza Maggiore:</strong> La plaza principal de Bolonia, rodeada de edificios históricos como la Basílica de San Petronio y el Palazzo d'Accursio.</li>
-              <li><strong>Las Dos Torres:</strong> La Torre Asinelli y la Torre Garisenda, dos torres medievales inclinadas que son símbolos de la ciudad.</li>
-              <li><strong>Archiginnasio de Bolonia:</strong> Un antiguo edificio universitario con un impresionante teatro anatómico y una biblioteca histórica.</li>
-              <li><strong>Siete Iglesias (Santo Stefano):</strong> Un complejo de iglesias interconectadas que datan de diferentes épocas.</li>
-              <li><strong>Mercado Quadrilatero:</strong> Un laberinto de calles estrechas llenas de tiendas de alimentos tradicionales, restaurantes y bares.</li>
-              <li><strong>Pinacoteca Nacional de Bolonia:</strong> Un museo de arte con una extensa colección de pinturas italianas, especialmente de la escuela boloñesa.</li>
-              <li><strong>Santuario de San Luca:</strong> Una iglesia en la cima de una colina con vistas panorámicas de la ciudad, accesible a través de un largo pórtico.</li>
-              <li><strong>Universidad de Bolonia:</strong> Una de las universidades más antiguas del mundo, con edificios históricos y un ambiente estudiantil vibrante.</li>
-              <li><strong>Museo Arqueológico Cívico:</strong> Un museo con una colección de artefactos que abarcan desde la prehistoria hasta la época romana.</li>
-              <li><strong>Gastronomía Boloñesa:</strong> No te pierdas probar platos típicos como la mortadela, los tortellini en brodo, la tagliatelle al ragù y la lasaña a la boloñesa.</li>
-              </ul>
-              </section>
+<section class="p-3 mt-5">
+  <h5 class="p-2">Aquí tienes algunas de sus atracciones más destacadas:</h5>
+  <ul>
+    <li class="mb-3"><strong>Piazza Maggiore:</strong> La plaza principal de Bolonia, rodeada de edificios históricos como la Basílica de San Petronio y el Palazzo d'Accursio.</li>
+    <li class="mb-3"><strong>Las Dos Torres:</strong> La Torre Asinelli y la Torre Garisenda, dos torres medievales inclinadas que son símbolos de la ciudad.</li>
+    <li class="mb-3"><strong>Archiginnasio de Bolonia:</strong> Un antiguo edificio universitario con un impresionante teatro anatómico y una biblioteca histórica.</li>
+    <li class="mb-3"><strong>Siete Iglesias (Santo Stefano):</strong> Un complejo de iglesias interconectadas que datan de diferentes épocas.</li>
+    <li class="mb-3"><strong>Mercado Quadrilatero:</strong> Un laberinto de calles estrechas llenas de tiendas de alimentos tradicionales, restaurantes y bares.</li>
+    <li class="mb-3"><strong>Pinacoteca Nacional de Bolonia:</strong> Un museo de arte con una extensa colección de pinturas italianas, especialmente de la escuela boloñesa.</li>
+    <li class="mb-3"><strong>Santuario de San Luca:</strong> Una iglesia en la cima de una colina con vistas panorámicas de la ciudad, accesible a través de un largo pórtico.</li>
+    <li class="mb-3"><strong>Universidad de Bolonia:</strong> Una de las universidades más antiguas del mundo, con edificios históricos y un ambiente estudiantil vibrante.</li>
+  </ul>
+</section>
 
 <h5 class="text-center mt-5">Más información:</h5>
-<iframe class="modal-video mb-5 mx-auto d-block" height="315"  src="https://www.youtube.com/embed/zi58bjXgknU?si=hfD17tiP6X17jPZd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="modal-video mb-5 mx-auto d-block" height="315"  src="https://www.youtube.com/embed/zi58bjXgknU?si=hfD17tiP6X17jPZd" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 <div class="modal-footer">
 <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
@@ -633,25 +637,26 @@ aria-hidden="true">
 </div>
 </div>
 </div>
+</main>
 
-
-<!-- Pie de pagina -->
-<div class="container-fluid p-0">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top">
-      <div class="col-md-4 d-flex align-items-center">
-       <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+  <!--Pie de pagina -->
+  <div class="p-0 mt-5">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center">
+      <div class="col-md-4 text-white">
+      <a class="mb-3 mb-md-0 pe-2" href="../../formulario/index.html">Contacto</a>
+      <a class="mb-3 mb-md-0" href="../../sobre-mi/index.html">Sobre mi</a>
       </div>
-  
       <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter" style="font-size: 24px;"></i></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram" style="font-size: 24px;"></i></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook" style="font-size: 24px;"></i></a></li>
+        <li class="ms-3"><a class="text-white" href="https://x.com/sofitomasello" target="_blank"><i class="bi bi-twitter" style="font-size: 24px;"></i></a></li>
+        <li class="ms-3"><a class="text-white" href="https://www.instagram.com/sofitomasello/?next=%2F" target="_blank"><i class="bi bi-instagram" style="font-size: 24px;"></i></a></li>
+        <li class="ms-3"><a class="text-white" href="https://www.facebook.com/sofi.tomasello" target="_blank"><i class="bi bi-facebook" style="font-size: 24px;"></i></a></li>
       </ul>
     </footer>
   </div>
   
+  
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../../js/archivo.js"></script>
+<script src="../../js/pag-destinos.js"></script>
 </body>
 </html>
