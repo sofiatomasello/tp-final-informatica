@@ -1,5 +1,3 @@
-
-
 // Función para validar el correo electrónico mediante expresiones regulares
 function validarEmail(email) {
   const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
@@ -9,7 +7,6 @@ function validarEmail(email) {
 // Obtener el formulario y el campo de correo
 const formulario = document.getElementById('formularioContacto');
 const campoEmail = document.getElementById('email');
-const imagenAgradecimiento = document.getElementById('imagen-agradecimiento');
 
 // Añadir evento para validación al enviar el formulario
 formulario.addEventListener('submit', function(evento) {
@@ -18,14 +15,8 @@ formulario.addEventListener('submit', function(evento) {
       evento.preventDefault(); // Evitar que el formulario se envíe
       alert('Por favor, ingrese un correo electrónico válido.');
   } else {
-      // Si el correo es válido, mostrar la imagen de agradecimiento
-      imagenAgradecimiento.style.display = 'block';
-      // Ocultar el formulario
+      // Si el correo es válido, ocultar el formulario y enviarlo directamente
       formulario.style.display = 'none';
-
-      // Enviar el formulario después de 3 segundos para dar tiempo a ver la imagen
-      setTimeout(function() {
-        formulario.submit();
-      }, 3000); // Espera 3 segundos antes de enviar el formulario
+      formulario.submit(); // Enviar el formulario inmediatamente
   }
 });
