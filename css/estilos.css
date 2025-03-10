@@ -40,11 +40,15 @@ text-align: justify;
     width: 30%;
 }
 
+.sello{
+width: 17%;
+}
+
 /* Estilos para los links*/
 a:link{ color: rgba(0, 0, 0, 0.988) !important; }
-a:visited{ color: rgba(255, 165, 81, 0.988) !important; }
-a:hover { color: #d82d2d !important;}
-a:active{color: rgb(89, 180, 105) !important;}
+a:visited{ color: rgba(255, 143, 39, 0.988) !important; }
+a:hover { color: #eb3c3c !important;}
+a:active{color: rgb(113, 129, 89) !important;}
 
 /* diseño para header de la mayoria de las paginas*/
 .imagen-header{
@@ -562,7 +566,9 @@ width: 100%;
       width: 50%;
     }
 
-    
+    .sello{
+      width: 4%;
+      }
     
 #carouselExampleCaptions .carousel-item img {
   max-height: 75vh;   
@@ -642,7 +648,7 @@ width: 100%;
   @media screen and (min-width: 1200px) {
 
   .textopurpose{
-  width: 70%;
+  width: 60%;
    }
 
 
