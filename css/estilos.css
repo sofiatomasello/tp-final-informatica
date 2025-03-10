@@ -307,6 +307,8 @@ width: 100%;
   border-radius: 1em;
 }
 
+
+
   button {
     cursor: pointer;
   }
@@ -337,6 +339,7 @@ width: 100%;
       background-color: #e0e0e0; 
     }
   
+ 
       
     .card-title{
       text-decoration: none;
@@ -361,6 +364,7 @@ width: 100%;
       border: 1px solid #ccc;
       background-color: #f8f8f8; 
     }
+
 
     .min-height-full {
       min-height: calc(100vh - 138px);
