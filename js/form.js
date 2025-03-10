@@ -14,9 +14,6 @@ formulario.addEventListener('submit', function(evento) {
   if (!validarEmail(campoEmail.value)) {
       evento.preventDefault(); // Evitar que el formulario se envíe
       alert('Por favor, ingrese un correo electrónico válido.');
-  } else {
-      // Si el correo es válido, ocultar el formulario y enviarlo directamente
-      formulario.style.display = 'none';
-      formulario.submit(); // Enviar el formulario inmediatamente
   }
+  // El formulario no se oculta y se envía normalmente sin cambiar su visibilidad
 });
