@@ -149,6 +149,9 @@ width: 100%;
 margin-top: 3em;
 }
 
+.img-gracias{
+width: 100%;
+}
 
 /*DISEÑO DE PAGINA GEOGRAFIA*/
 .map-image {
@@ -557,7 +560,9 @@ width: 100%;
     .h-gastronomia{ 
      height: 75vh; 
      }
-
+     .img-gracias{
+      width: 40%;
+      }
   
      .container-juego {
       width: 50%;
