@@ -1,6 +1,6 @@
 // Función para validar el correo electrónico mediante expresiones regulares
 function validarEmail(email) {
-  const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  const regex = /^[a-zA-Z0-9._-]+@(gmail\.com|yahoo\.com|outlook\.com)$/;
   return regex.test(email);
 }
 

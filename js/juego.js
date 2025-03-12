@@ -2,9 +2,9 @@
 
 // Array de preguntas para el juegoo de Italia
 // Cada objeto en el array contiene:
-// - 'pregunta': La pregunta que se va a hacer al usuario.
-// - 'opciones': Un array con las opciones de respuesta posibles.
-// - 'correcta': La respuesta correcta a la pregunta.
+//pregunta: La pregunta que se va a hacer al usuario.
+//opciones: Un array con las opciones de respuesta posibles.
+//correcta: La respuesta correcta a la pregunta.
 
 const preguntas = [
   { pregunta: "¿Cuál es la capital de Italia?", opciones: ["Roma", "Milán", "Venecia"], correcta: "Roma" },
@@ -24,68 +24,85 @@ const preguntas = [
   { pregunta: "¿Qué ciudad italiana es famosa por sus canales?", opciones: ["Génova", "Milán", "Venecia"], correcta: "Venecia" }
 ];
 
+
+
 // Variables para llevar el seguimiento del juego
 let preguntaActual = 0; // Índice de la pregunta actual.
 let puntaje = 0; // Puntaje del jugador.
 
-var contenedorJuego = document.getElementById("contenedorJuego"); // Contenedor del juego
+let contenedorJuego = document.getElementById("contenedorJuego"); // Contenedor del juego
 contenedorJuego.style.display = "none"; // El juego comienza oculto
-var botonJugar = document.getElementById("botonJugar"); // Boton para empezar el juego
-var temporizadorHtml = document.getElementById("temporizador"); // Contador de segundos en pantalla
+let botonJugar = document.getElementById("botonJugar"); // Boton para empezar el juego
+let temporizadorHtml = document.getElementById("temporizador"); // Contador de segundos en pantalla
 let temporizadorActivo = true; // Activar/Desactivar el conteo de segundos 
 
-// Referencias a los elementos HTML.
 const preguntastrivia = document.getElementById("preguntaHtml");
 const opcionestrivia= document.getElementById("opcionesHtml");
 const resultado = document.getElementById("resultadosHtml");
 const tiempoLimiteDeCadaPregunta = 15; // Tiempo en segundos para responder cada pregunta
 
+
+
+
+
+     //Al hacer click
 function comenzarJuego() {
+     // Oculto el botón de "Jugar" una vez que el jugador comienza el juego.
     botonJugar.style.display = "none";
+ // Muestro el contenedor del juego
     contenedorJuego.style.display = "flex";
+
+   // Llamo a la función para mostrar la primera pregunta del juego.
     mostrarPregunta();
-    temporizadorSonido.play();
-    preguntastrivia.style.display = "block";
-    opcionestrivia.style.display = "flex";
-    temporizadorHtml.style.display = "block";
+    temporizadorSonido.play(); //activo temporizador
+    preguntastrivia.style.display = "block"; //muestro preguntas
+    opcionestrivia.style.display = "flex"; //Muestro las opciones de respuesta en la pantalla
+    temporizadorHtml.style.display = "block"; //muestro temporizaor en pantalla
 }
 
-// // Función para mostrar la pregunta actual enn pantalla
 function mostrarPregunta() {
+      // Obtengo la pregunta actual del array de preguntas
     const pregunta = preguntas[preguntaActual];
     preguntastrivia.textContent = pregunta.pregunta;
-    opcionestrivia.innerHTML = ""; // Limpia opciones anteriores
+    opcionestrivia.innerHTML = "";// Limpio opciones de respuesta anteriores antes de mostrar las nuevas opciones.
 
     
 
-   // Genera botones para cada opción de respuesta
+   // Genero botones para cada opción de respuesta
    pregunta.opciones.forEach(function(opcion) {
+      // Creo un nuevo botón para cada opción de respuesta.
     const button = document.createElement("button");
+      // Asigno el texto de la opción a cada botón.
     button.textContent = opcion;
+         // Cuando el jugador haga clic en el botón, verifico si la respuesta es correcta
     button.onclick = function() {
+    // Llamo a la función para comprobar la respuesta seleccionada
         verificarRespuesta(opcion);
     };
+      // Añade el botón a la pantalla, en el área de las opciones
     opcionestrivia.appendChild(button);
 
+     // Empieza el temporizador nuevamente
     comenzarTemporizador();
 });
 }
 
 // Función para verificar si la respuesta seleccionada es correcta.
 function verificarRespuesta(opcionSeleccionada) {
+        // Obtengo la pregunta actual de la lista de preguntas.
     const pregunta = preguntas[preguntaActual];
     const botones = opcionestrivia.querySelectorAll("button");
 
-   // Cambia los estilos de los botones según si son correctos o no.
+     //Paso sobre cada botón y cambio su estilo según si la respuesta es correcta o no.
 botones.forEach(function(boton) {
     if (boton.textContent === pregunta.correcta) {
-        boton.style.backgroundColor = "green"; // Resalta la respuesta correcta en verde.
-        boton.style.color = "white"; // Resalta la respuesta correcta en verde.
+        boton.style.backgroundColor = "green"; // Resalto la respuesta correcta en verde.
+        boton.style.color = "white"; // Resalto la respuesta correcta en verde.
     } else {
-        boton.style.backgroundColor = "red"; // Resalta las respuestas incorrectas en rojo.
-        boton.style.color = "white"; // Resalta la respuesta correcta en verde.
+        boton.style.backgroundColor = "red"; // Resalto las respuestas incorrectas en rojo.
+        boton.style.color = "white"; // Resalto la respuesta correcta en verde.
     }
-    boton.disabled = true; // Deshabilita los botones después de seleccionar.
+    boton.disabled = true; // Deshabilito los botones después de seleccionar.
 });
 
      // Si la respuesta es correcta, suma un puntooo y suena el sonido de correcto en el caso de que no sonido de error
@@ -96,11 +113,13 @@ botones.forEach(function(boton) {
         errorSonido.play();
     }
  
-    // Parar el temporizador para que no siga bajando mientras vemos el resultado
+
+    // Paro el temporizador para que no siga bajando mientras vemos el resultado
     temporizadorActivo = false;
     
     // Espera un segundo antes de mostrar la siguiente pregunta.
     setTimeout(function() {
+         // Incremento el índice de la pregunta actual para pasar a la siguiente pregunta.
         preguntaActual++;
 
     // Si hay más preguntas, continúa el juego; si no, muestra el resultado final
@@ -115,77 +134,108 @@ botones.forEach(function(boton) {
 
 // Función para mostrar el resultado final del juego.
 function mostrarResultado() { 
-    temporizadorSonido.pause(); // Para el sonido
-    temporizadorSonido.currentTime = 0; // Reinicia su tiempo a 0 para que empiece desde el comienzo la proxima vez
+    temporizadorSonido.pause(); // Paro el sonido
+    temporizadorSonido.currentTime = 0; // Reinicio su tiempo a 0 para que empiece desde el comienzo la proxima vez
 
     preguntastrivia.style.display = "none";
     opcionestrivia.style.display = "none";
 
     let mensajeFinal = "";
 
+       // Si el jugador ha acertado todas las preguntas, se mostrara el mensaje en panatlla y el sonido de ganador.
     if (puntaje === preguntas.length) {
         mensajeFinal = "¡Felicidades! Has acertado todas las preguntas";
         winSonido.play();
     } else {
+        
+       // Si el jugador no ha acertado todas las preguntas, se mostrara el mensaje en panatlla y el sonido de perdedor.
         mensajeFinal = "¡Sigue practicando y mejora tu puntuación!";
         loseSonido.play();
     }
 
+       // Muestro el mensaje final y el puntaje del jugador en la pantalla.
     resultado.innerHTML = 
         "<h2>Juego terminado</h2>" +
         "<p>Tu puntaje es: <strong>" + puntaje + "</strong> de <strong>" + preguntas.length + "</strong></p>" + 
         "<p>" + mensajeFinal + "</p>" +
         "<button onclick='reiniciarJuego()'>Reiniciar</button>";
 
+ // Oculto el temporizador porque el juego ha terminado.
     temporizadorHtml.style.display = "none";
 }
 
 // Función para reiniciar el juego
 function reiniciarJuego() {
+    // Reinicio las variables del juego a su estado inicial.
     preguntaActual = 0;
     puntaje = 0;
+       // Oculto el área de juego y muestro el botón para empezar nuevamente.
     contenedorJuego.style.display = "none"
     botonJugar.style.display = "block";
-    resultado.innerHTML = "";
+    resultado.innerHTML = ""; //limpio resultados
 }
 
 /* Temporizador */
-var tiempoRestante = 15;
-var tiempoIntervalo;
+let tiempoRestante = 15;
+let tiempoIntervalo;
+
 
 function comenzarTemporizador() {
+     // Detengo cualquier temporizador previo que esté corriendo para evitar que se mezcle con el anterior.
     clearInterval(tiempoIntervalo);
+
+    // Activo el temporizador
     temporizadorActivo = true;
+
+    // Reinicio el tiempo restante a 15 segundos
     tiempoRestante = 15;
+
+// Muestro el tiempo restante en la pantalla (para que el jugador vea cuánto tiempo le queda).
     temporizadorHtml.textContent = tiempoRestante;
+
+    
+    // Establezco  intervalo de 1 segundo para decrementar el tiempo
     tiempoIntervalo = setInterval(function() {
+
+          // Solo actualizo el tiempo si el temporizador está activo
         if(temporizadorActivo) {
+        // Resto 1 segundo al tiempo restante
             tiempoRestante = tiempoRestante - 1;
             temporizadorHtml.textContent = tiempoRestante;
+
+         // Si el tiempo se agota (llega a 0), detengo el temporizador
             if (tiempoRestante <= 0) {
                 clearInterval(tiempoIntervalo);
+        // Llamo a la función para verificar la respuesta, pasando una respuesta vacía porque el tiempo se agotó.
                 verificarRespuesta("");
             }
         }
-    }, 1000);
+    }, 1000);// El intervalo se ejecuta cada 1 segundo.
 }
 
 
 
 /* Sonidos a utilizarr*/
+
+// Carga el sonido del temporizador (cuando el reloj está corriendo).
 const temporizadorSonido = new Audio("sonidos/temporizador.wav");
 temporizadorSonido.loop = true; // Si termina vuelve a empezar
-temporizadorSonido.volume = 0.5; // Ajustar volumen (0.0 a 1.0)
+// Establece el volumen del sonido del temporizador (valor entre 0.0 y 1.0).
+temporizadorSonido.volume = 0.5;
 
+// Carga el sonido de error (cuando el jugador selecciona una respuesta incorrecta).
 const errorSonido = new Audio("sonidos/error.mp3");
-errorSonido.volume = 0.5; // Ajustar volumen (0.0 a 1.0)
+errorSonido.volume = 0.5;
 
+// Carga el sonido de acierto (cuando el jugador selecciona una respuesta correcta).
 const aciertoSonido = new Audio("sonidos/acierto.wav");
-aciertoSonido.volume = 0.5; // Ajustar volumen (0.0 a 1.0)
+aciertoSonido.volume = 0.5;
 
-
+// Carga el sonido de victoria (cuando el jugador gana el juego).
 const winSonido = new Audio("sonidos/win.wav");
-winSonido.volume = 0.5; // Ajustar volumen (0.0 a 1.0)
+winSonido.volume = 0.5;
 
+
+// Carga el sonido de derrota (cuando el jugador pierde el juego).
 const loseSonido = new Audio("sonidos/perdiste.wav");
-loseSonido.volume = 0.5; // Ajustar volumen (0.0 a 1.0)
+loseSonido.volume = 0.5; 
