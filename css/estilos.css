@@ -4,15 +4,15 @@
 
 /*Paleta de colores a ultilizar debido a que boostrap no tiene los colores que deseo*/
 .color-verde{
-background-color: rgb(113, 129, 89);
+background-color: #718159;
 }
 
 .color-beige{
-background-color: beige;
+background-color: #f5f5dc;
 }
 
 .color-marron{
-background-color: rgb(119, 90, 90);
+background-color: #775a5a;
 }
 
 .color-rojo{
@@ -46,7 +46,7 @@ width: 17%;
 
 /* Estilos para los links*/
 a:link{ color: rgba(0, 0, 0, 0.988) !important; }
-a:visited{ color: rgba(255, 143, 39, 0.988) !important; }
+a:visited{ color: #fca24efc !important; }
 a:hover { color: #eb3c3c !important;}
 a:active{color: rgb(113, 129, 89) !important;}
 
@@ -80,9 +80,6 @@ footer{
   background-color: #816346;
   padding: 1em;
 }
-
-
-
 
 
 /* DISENO PAGINA HOME PAGE*/
