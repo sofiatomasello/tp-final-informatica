@@ -1,7 +1,6 @@
 
 /*MOBILE ESTILOS*/
 
-
 /*Paleta de colores a ultilizar debido a que boostrap no tiene los colores que deseo*/
 .color-verde{
 background-color: #718159;
@@ -24,7 +23,8 @@ background-color: #775a5a;
   }
 
   
-/*Aplico Tipografia a todo con Google Fonts*/
+
+/*Aplico Tipografia elegida a todo con Google Fonts*/
 body{
   font-family: "Merriweather", serif;
   font-weight: 300;
@@ -35,6 +35,7 @@ body{
 .text-justify-css{
 text-align: justify;
 }
+
 /* Logo de la pagina: bandera de Italia*/
 .logo{
     width: 30%;
@@ -57,14 +58,6 @@ a:active{color: rgb(113, 129, 89) !important;}
   object-fit: cover;  
 }
 
-/* Contenedor general de paginas que uso en algunas para centrar */
-.container-general{
-  width: 85%; 
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-
 
 /* Contenedor general de paginas que uso en algunas para centrar */
 main .row{
@@ -72,7 +65,6 @@ main .row{
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-
 }
 
 /*PIE DE PAGINA*/
@@ -89,17 +81,8 @@ footer{
   width: 95%;
 }    
 
-
 .contenedor-texto {
   position: relative;
-}
-
-.text-shadow-custom {
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
-}
-
-.purpose{ 
-  background-color: #84b6c0;
 }
 
 .textopurpose{
@@ -132,19 +115,14 @@ width: 100%;
 
 
 
-
-
-
 /* Estilo de pagina contacto */
 .contacto {
   width: 100%;
   padding: 1em;
 }
-
 .contacto-img{
   width: 100%;
 }
-
 .formulario{
 margin-top: 3em;
 }
@@ -153,17 +131,8 @@ margin-top: 3em;
 width: 100%;
 }
 
-/*DISEÑO DE PAGINA GEOGRAFIA*/
-.map-image {
-  cursor: pointer; 
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-/* Efecto de sombreado y agrandado al pasar el mouse */
-.map-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-}
+
 
 /*DISEÑO DE PAGINA GALERIA DE FOTOS*/
 
@@ -174,15 +143,8 @@ width: 100%;
 .container-fotos img {
   width: 100%; 
   height: auto; 
-
 }
 
-.conteiner-galeria{
-  background-color: rgb(3, 3, 3);
-  height: 100%;
-   }
-  
-   
    .container-fotos {
     width: 95%;
     align-items: center;
@@ -191,6 +153,17 @@ width: 100%;
   }
 
 
+
+/*DISEÑO DE PAGINA GEOGRAFIA*/
+.map-image{
+  cursor: pointer; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Efecto de sombreado y agrandado al pasar el mouse */
+.map-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
 
 
 /*DISEÑO PAGINA GASTRONOMIA*/
@@ -203,7 +176,7 @@ width: 100%;
   /* Efecto al pasar el mouse */
   .imagen-enlace:hover img {
     filter: brightness(0.8); /* Oscurece la imagen */
-    transform: scale(1.05); /* Aumenta el tamaño */
+    transform: scale(1.05); 
   }
 
   /* Efecto al hacer clic */
@@ -216,7 +189,7 @@ width: 100%;
   .texto-sobre-imagen {
     transform: translate(10%, -140%);
     font-size: 29px;
-    text-shadow: 2px 2px 4px rgba(63, 114, 61, 0.7); /* Sombreado agregado */
+    text-shadow: 2px 2px 4px rgba(63, 114, 61, 0.7);
     z-index: 2;
 }
 /* Color a utilizar en algunos estilos*/
@@ -442,24 +415,31 @@ width: 100%;
   color: #D10000;
 }
 
-
-
 /* Diseno pagina Musica*/
 .imagen-musica {
   width: 100%;
   transition: filter 0.3s ease; /* Transición para el filtro */
 }
-
 .imagen-musica:hover {
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5)); /* Sombreado alrededor de la imagen */
 }
+
+
+
 
 /* En dispositivos móviles, el texto siempre será visible */
 @media (max-width: 768px) {
   .texto-sobre-imagen-destinos {
     opacity: 1;
   }
+
+
+  section:nth-of-type(2) .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
+
 
  /* ESTILOS PPARA PAGINAS APARTIR DE 576PX (pequeño) */
 @media screen and (min-width: 576px ) {
@@ -572,6 +552,9 @@ width: 100%;
       width: 4%;
       }
     
+
+
+
 #carouselExampleCaptions .carousel-item img {
   max-height: 75vh;   
 }
@@ -708,7 +691,6 @@ width: 100%;
   width: 80%;
 
 }
-
 
 .imagen-home {
   max-height: 70vh;
