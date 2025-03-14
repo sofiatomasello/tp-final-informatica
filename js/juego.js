@@ -239,3 +239,13 @@ winSonido.volume = 0.5;
 // Carga el sonido de derrota (cuando el jugador pierde el juego).
 const loseSonido = new Audio("sonidos/perdiste.wav");
 loseSonido.volume = 0.5; 
+
+
+
+document.addEventListener("visibilitychange", function () {
+    if (document.hidden) {
+        temporizadorSonido.pause();
+    } else {
+        temporizadorSonido.play();
+    }
+  });
