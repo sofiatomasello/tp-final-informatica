@@ -105,14 +105,18 @@ botones.forEach(function(boton) {
     boton.disabled = true; // Deshabilito los botones después de seleccionar.
 });
 
-     // Si la respuesta es correcta, suma un puntooo y suena el sonido de correcto en el caso de que no sonido de error
-    if (opcionSeleccionada === pregunta.correcta) {
+   
+     // Si la respuesta es correcta, suma un puntooo
+     if (opcionSeleccionada === pregunta.correcta) {
         puntaje++;
+        aciertoSonido.pause(); 
+        aciertoSonido.currentTime = 0; 
         aciertoSonido.play();
     } else {
+        errorSonido.pause();
+        errorSonido.currentTime = 0; 
         errorSonido.play();
     }
- 
 
     // Paro el temporizador para que no siga bajando mientras vemos el resultado
     temporizadorActivo = false;
@@ -241,11 +245,13 @@ const loseSonido = new Audio("sonidos/perdiste.wav");
 loseSonido.volume = 0.5; 
 
 
-
+// Escucha el evento de cambio de visibilidad de la página, lo tuve que hacer porque en mobile se seguia escuchando en segundo plano si salia de la web
 document.addEventListener("visibilitychange", function () {
     if (document.hidden) {
+         // Si la página está oculta, pausa el sonido
         temporizadorSonido.pause();
     } else {
+               // Si la página está visible, reproduce el sonido nuevamente
         temporizadorSonido.play();
     }
   });
