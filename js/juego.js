@@ -244,8 +244,8 @@ winSonido.volume = 0.5;
 const loseSonido = new Audio("sonidos/perdiste.wav");
 loseSonido.volume = 0.5; 
 
-
-// Escucha el evento de cambio de visibilidad de la página, lo tuve que hacer porque en mobile se seguia escuchando en segundo plano si salia de la web
+//Para solucionar esto use inteligencia artificial ya que no sabia como resolverlo 
+// Escucha el evento de cambio de visibilidad de la página API, lo tuve que hacer porque en mobile se seguia escuchando en segundo plano si salia de la web
 document.addEventListener("visibilitychange", function () {
     if (document.hidden) {
          // Si la página está oculta, pausa el sonido

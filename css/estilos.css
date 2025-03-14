@@ -58,7 +58,6 @@ a:active{color: rgb(113, 129, 89) !important;}
   object-fit: cover;  
 }
 
-
 /* Contenedor general de paginas que uso en algunas para centrar */
 main .row{
   display: flex;
@@ -72,7 +71,6 @@ footer{
   background-color: #816346;
   padding: 1em;
 }
-
 
 /* DISENO PAGINA HOME PAGE*/
 .imagen-home {
@@ -112,8 +110,6 @@ text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 text-align: center;
 width: 100%; 
 }
-
-
 
 /* Estilo de pagina contacto */
 .contacto {
