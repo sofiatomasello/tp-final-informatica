@@ -268,8 +268,6 @@ width: 100%;
 
 
 
-
-
 /*DISEÑO PAGINA JUEG0*/
 /* container juego para mobile*/
 .container-juego {
@@ -386,8 +384,6 @@ width: 100%;
   opacity: 1; /* texto visible */
 }
 
-
-
 /* Estilos generales para la galería de destinos imperdibles */
 .conteinerlugares {
   width: 100%;
@@ -407,22 +403,14 @@ width: 100%;
 
 
 
-
-
 /* Diseno pagina futbol */
 .destacado {
   font-weight: bold;
   color: #D10000;
 }
 
-/* Diseno pagina Musica*/
-.imagen-musica {
-  width: 100%;
-  transition: filter 0.3s ease; /* Transición para el filtro */
-}
-.imagen-musica:hover {
-  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5)); /* Sombreado alrededor de la imagen */
-}
+
+
 
 
 
@@ -473,14 +461,10 @@ width: 100%;
 }
 
 
-
-
-
  /* ESTILOS PPARA PAGINAS APARTIR DE 768PX(mediano) */
     @media screen and (min-width: 768px) {
         .h-gastronomia{
           height: 40vh; 
-    
         }
 
         .header-subtext{
@@ -500,12 +484,10 @@ width: 100%;
           max-height: 50vh;   
         }
         
-
-        
 #carouselExampleCaptions .carousel-item img { 
   max-height: 50vh;   
 }
-        
+  
         .imagenes-comida{
           height: 40vh; 
           }
@@ -519,7 +501,6 @@ width: 100%;
     top: 65%;
     }
 
-
     .logo{
       width: 30%;
   }
@@ -527,15 +508,13 @@ width: 100%;
           }
       
    
-
-
-
  /* ESTILOS PPARA PAGINAS APARTIR DE 992PX(grande) */
 @media screen and (min-width: 992px) {
  
   .logo{
     width: 30%;
 }
+
 
     .h-gastronomia{ 
      height: 75vh; 
@@ -552,9 +531,6 @@ width: 100%;
       width: 4%;
       }
     
-
-
-
 #carouselExampleCaptions .carousel-item img {
   max-height: 75vh;   
 }
@@ -564,7 +540,6 @@ width: 100%;
     
     .contacto-img{
       width: 75%;
-     
     }
   
     .purpose{
@@ -580,8 +555,6 @@ width: 100%;
    width: 100%;
    }
         
-
-
   .imagen-header{
    max-height: 75vh;             
   }
@@ -591,8 +564,7 @@ width: 100%;
   width: 100%;
   }
             
-  .header-container a.btn {
-          
+  .header-container a.btn {   
    top: 65%; 
   }
 
@@ -600,8 +572,6 @@ width: 100%;
     width: 70%;
   }
 
-
-  /* DISENO PAGINA HOME PAGE*/
 .imagen-home {
   max-height: 70vh;
 
@@ -620,13 +590,7 @@ width: 100%;
 #navbarNav ul.navbar-nav {
   margin: 0 auto;
 }
-
-
-
-
-
   }
-
 
 
  /* ESTILOS PARA PAGINAS APARTIR DE 1200PX(extra grande) */
@@ -636,19 +600,13 @@ width: 100%;
   width: 60%;
    }
 
-
    .container-juego {
     width: 50%;
   }
   
-  .imagen-musica{
-    width: 60%;
-  }
-    
   .imagenes-comida{
    width: 100%;
   }
-
 
   .header-subtext{
     font-size: 40px;
@@ -657,7 +615,6 @@ width: 100%;
     .header-text{
       font-size: 50px;
     }
-
 
   .header-container h1 {
   top: 40%;
@@ -670,7 +627,6 @@ width: 100%;
   top: 50%; 
    }
 
-     
    .texto-sobre-imagen-destinos {
     font-size: 35px;
   }
@@ -679,17 +635,12 @@ width: 100%;
     width: 60%;
   }
 
-  
   .conteinerlugares{
     width: 70%;
   }
 
-
-
-     
 .container-fotos{
   width: 80%;
-
 }
 
 .imagen-home {
