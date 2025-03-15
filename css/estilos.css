@@ -274,11 +274,16 @@ width: 100%;
   margin: 0 auto;
   background-color: rgb(106, 169, 123);
   padding: 2em;
+  margin-top: 3em;
   margin-bottom: 3em;
   border-radius: 1em;
 }
-
-
+#preguntaHtml{
+  color: white;
+}
+#resultadosHtml{
+  color: white;
+}
 
   button {
     cursor: pointer;
@@ -337,6 +342,7 @@ width: 100%;
     }
 
 
+/*Averiguado con AI debido a que no podia solucionar el tema de que el footer cuando la pagina tiene poco contenido me quede abajo de todo*/
     .min-height-full {
       min-height: calc(100vh - 138px);
     }
@@ -361,6 +367,7 @@ width: 100%;
   position: relative; 
   display: block; 
   margin-bottom: 3em;
+  text-align: center;
 }
 .texto-sobre-imagen-destinos {
   position: absolute; 
@@ -383,7 +390,6 @@ width: 100%;
 /* Estilos generales para la galería de destinos imperdibles */
 .conteinerlugares {
   width: 100%;
-  text-align: center;
   margin: 0 auto;
   margin-top: 5em;
   margin-bottom: 5em;
@@ -408,9 +414,6 @@ width: 100%;
 
 
 
-
-
-
 /* En dispositivos móviles, el texto siempre será visible */
 @media (max-width: 768px) {
   .texto-sobre-imagen-destinos {
@@ -422,6 +425,7 @@ width: 100%;
     display: flex;
     flex-direction: column-reverse;
   }
+  
 }
 
 
